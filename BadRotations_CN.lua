@@ -137,8 +137,8 @@ local locales={
 
 --config: enemies engine
 ["Dynamic Targetting"]="动态目标",
-["Target Dynamic Target"]="",
-["Hostiles Only"]="",
+["Target Dynamic Target"]="选中动态目标",
+["Hostiles Only"]="只攻击敌对单位",
 ["Wise Target"]="智能目标",
 ["Forced Burn"]="",
 ["Avoid Shields"]="",
