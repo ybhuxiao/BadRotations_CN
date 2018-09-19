@@ -1,6 +1,26 @@
 --/print isChecked("Blessing of Freedom")
 local locales={
 
+  ["Base Options"]="基础功能",
+  ["Rotation Options"]="循环功能",
+
+
+  --createSection下拉模块
+  ["Utility"]="功能",
+  ["Single Target Healing"]="单体治疗",
+  ["AOE Healing"]="群疗",
+  ["Damage"]="伤害",
+  ["Cooldowns"]="冷却",
+  ["Defensive"]="防御/自保",
+  ["Interrupts"]="打断",
+  ["Toggle Keys"]="快捷键",
+  ["Enemies Engine"]="敌对引擎",
+  ["General"]="常规",
+  ["Healing Engine"]="治疗引擎",
+  ["Other Features"]="其他功能",
+  ["Save/Load Settings"]="保存/加载设置",
+
+
   --config: enemies engine
   ["Dynamic Targetting"]="动态定位",
   ["Target Dynamic Target"]="自动切换目标",
@@ -907,7 +927,7 @@ end
 local hooked = false
 C_Timer.NewTicker(.5, function()
   if hooked then return;end
-  if br and br.ui and br.ui.createText then
+  if br and br.ui and br.ui.createText and br.ui.createSection and br.ui.createPagesDropdown then
     hooked = true
     
     print("br 汉化开始")
@@ -950,7 +970,50 @@ C_Timer.NewTicker(.5, function()
       end
       return original_createText(self, parent, color..text)
     end
-    
+
+    local original_createSection = br.ui.createSection
+    function br.ui.createSection(self, parent, sectionName, tooltip)
+      if sectionName and locales[sectionName] and locales[sectionName]~="" then
+        sectionName = locales[sectionName]
+      elseif locales[sectionName]==nil then
+        --print('["'..text..'"]="",')
+      end
+      return original_createSection(self, parent,sectionName,tooltip)
+    end
+
+    --local original_createPagesDropdown = br.ui.createPagesDropdown
+    --function br.ui.createPagesDropdown(self,window, menuPages)
+    --  if window and window.pages and #window.pages>0 then
+    --    for i=1,#window.pages do
+    --      local pageName = window.pages[i][1]
+    --      if pageName and locales[pageName] and locales[pageName]~="" then
+    --        pageName = locales[pageName]
+    --      elseif locales[sectionName]==nil then
+    --        print('["'..pageName..'"]="",')
+    --      end
+    --      window.pages[i][1] = pageName
+    --    end
+    --  end
+    --  return original_createPagesDropdown(self,window, menuPages)
+    --end
+
+    C_Timer.After(2,function()
+      BadRotationsButton:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(Minimap, "ANCHOR_CURSOR", 50 , 50)
+        GameTooltip:SetText("BadRotations", 214/255, 25/255, 25/255)
+        GameTooltip:AddLine("by CuteOne")
+        GameTooltip:AddLine("汉化by老胡，QQ群597022336")
+        GameTooltip:AddLine("左键：开/关BR配置.", 1, 1, 1, 1)
+        GameTooltip:AddLine("右键：开/关脚本配置", 1, 1, 1, 1)
+        GameTooltip:AddLine("Shift+左键：开/关快捷工具栏.", 1, 1, 1, 1)
+        --GameTooltip:AddLine("Alt+Shift+LeftButton to drag.", 1, 1, 1, 1)
+        --GameTooltip:AddLine("Middle Click to open help frame11.", 1, 1, 1, 1)
+        GameTooltip:Show()
+      end)
+      BadRotationsButton:SetScript("OnLeave", function(self)
+        GameTooltip:Hide()
+      end)
+    end)
     
     
     --local original_isChecked = isChecked

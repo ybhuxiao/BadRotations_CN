@@ -15,7 +15,7 @@
 
 感谢列表：
 1. 感谢之前Richard做的汉化版本，这个插件中很多中文都是来自那里。
-2. 感谢群里一起汉化的小伙伴：Windforce、稻草、奶糖等
+2. 感谢群里一起汉化的小伙伴：Windforce、稻草、奶糖、强力老猫等
 
 ![进度图](https://github.com/ybhuxiao/BadRotations_CN/raw/master/media/progress.png)
 
