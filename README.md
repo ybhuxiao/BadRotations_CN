@@ -4,7 +4,12 @@
 
 ## 1.使用说明
 
-1. 这是一个普通的wow插件，把插件下载后放到addons目录下，运行的时候把“BadRotations”和“BadRotations汉化”两个插件都启用即可。
+1. 这是一个基于[BadRotations](https://github.com/CuteOne/BadRotations)开发的wow插件，他可以把BadRotations的界面翻译成中文
+2. 把插件下载后放到addons目录下，确保插件文件夹的名字是“BadRotations_CN”，并且BadRotations_CN.toc文件在该文件夹下。
+3. 运行的时候把“BadRotations”和“BadRotations汉化”两个插件都启用即可。
+```
+This is a wow addon developed based on [BadRotations](https://github.com/CuteOne/BadRotations). It can translate the UI of BR into Chinese.
+```
 2. 如果想暂时使用英文版，就在插件选择界面把“BadRotations汉化”取消勾选；如果不想再使用，就直接删除本插件即可。
 
 
