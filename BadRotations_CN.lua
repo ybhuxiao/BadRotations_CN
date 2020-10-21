@@ -1004,10 +1004,10 @@ C_Timer.NewTicker(.5, function()
     --end
     
     
-    --hook createText方法
-    local original_createText = br.ui.createText
-    function br.ui.createText(self, parent, text)
-      if type(text)~="string" or #text==0 then original_createText(parent, text); end
+    --hook createCheckbox方法
+    local original_createCheckbox = br.ui.createCheckbox
+    function br.ui.createCheckbox(self, parent, text)
+      if type(text)~="string" or #text==0 then original_createCheckbox(parent, text); end
     
       local color=""
       if startswith(text,"|c") and #text>10 then
@@ -1020,7 +1020,7 @@ C_Timer.NewTicker(.5, function()
       elseif locales[text]==nil then      
         --print('["'..text..'"]="",')
       end
-      return original_createText(self, parent, color..text)
+      return original_createCheckbox(self, parent, color..text)
     end
 
     local original_createSection = br.ui.createSection
