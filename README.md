@@ -8,7 +8,7 @@
 2. 如果想暂时使用英文版，就在插件选择界面把“BadRotations汉化”取消勾选；如果不想再使用，就直接删除本插件即可。
 
 
-## 2.赞赏：
+## 2.关注/赞赏：
 
 
 ![赞赏/关注](http://wowdata.top/static/img/my_info.png)
