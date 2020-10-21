@@ -1023,14 +1023,14 @@ C_Timer.NewTicker(.5, function()
       return original_createCheckbox(self, parent, color..text)
     end
 
-    local original_createSection = br.ui.createSection
-    function br.ui.createSection(self, parent, sectionName, tooltip)
+    local original_createCheckbox = br.ui.createCheckbox
+    function br.ui.createCheckbox(self, parent, sectionName, tooltip)
       if sectionName and locales[sectionName] and locales[sectionName]~="" then
         sectionName = locales[sectionName]
       elseif locales[sectionName]==nil then
         --print('["'..text..'"]="",')
       end
-      return original_createSection(self, parent,sectionName,tooltip)
+      return original_createCheckbox(self, parent,sectionName,tooltip)
     end
 
     --local original_createPagesDropdown = br.ui.createPagesDropdown
