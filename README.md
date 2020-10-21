@@ -2,7 +2,7 @@
 
 ## 1.使用说明
 
-1. 这是一个普通的wow插件，把插件下载后放到addons目录下，运行的时候把“BadRotations”和“BadRotations汉化”都选上即可。
+1. 这是一个普通的wow插件，把插件下载后放到addons目录下，运行的时候把“BadRotations”和“BadRotations汉化”两个插件都启用即可。
 2. 如果想暂时使用英文版，就在插件选择界面把“BadRotations汉化”取消勾选；如果不想再使用，就直接删除本插件即可。
 
 ## 2.为什么单独搞个插件而不是直接改br
