@@ -13,6 +13,8 @@
 
 ![赞赏/关注](http://wowdata.top/static/img/my_info.png)
 
+如果图挂了可以点[这里](http://wowdata.top/static/img/my_info.png)
+
 
 ## 3.为什么单独搞个插件而不是直接改br
 这样模式的好处在于：
