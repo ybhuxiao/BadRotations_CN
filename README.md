@@ -3,10 +3,6 @@
 这个插件是BadRotations的附属插件，必须把“BadRotations”和“BadRotations汉化”都选上才可以。
 这样模式的好处在于没有修改任何br的代码，br更新了之后，BadRotations_CN即使不更新，也不影响br的使用。另外你只需要启用/禁用这个插件，就可以在中文/英文版之前随意切换！
 
-对br有兴趣的欢迎加群855255365
-
-对lua开发有兴趣的童鞋欢迎加QQ群597022336（要求有lua基础，如果只是使用br，加前面那个br群就好啦~）
-
 
 ![使用说明](https://github.com/ybhuxiao/BadRotations_CN/raw/master/media/eg.png)
 
