@@ -1005,9 +1005,9 @@ C_Timer.NewTicker(.5, function()
     
     
     --hook createCheckbox方法
-    local original_createCheckbox = br.ui.createCheckbox
+    local original_createText = br.ui.createCheckbox
     function br.ui.createCheckbox(self, parent, text)
-      if type(text)~="string" or #text==0 then original_createCheckbox(parent, text); end
+      if type(text)~="string" or #text==0 then original_createText(parent, text); end
     
       local color=""
       if startswith(text,"|c") and #text>10 then
@@ -1020,17 +1020,17 @@ C_Timer.NewTicker(.5, function()
       elseif locales[text]==nil then      
         --print('["'..text..'"]="",')
       end
-      return original_createCheckbox(self, parent, color..text)
+      return original_createText(self, parent, color..text)
     end
 
-    local original_createCheckbox = br.ui.createCheckbox
-    function br.ui.createCheckbox(self, parent, sectionName, tooltip)
+    local original_createSection = br.ui.createSection
+    function br.ui.createSection(self, parent, sectionName, tooltip)
       if sectionName and locales[sectionName] and locales[sectionName]~="" then
         sectionName = locales[sectionName]
       elseif locales[sectionName]==nil then
         --print('["'..text..'"]="",')
       end
-      return original_createCheckbox(self, parent,sectionName,tooltip)
+      return original_createSection(self, parent,sectionName,tooltip)
     end
 
     --local original_createPagesDropdown = br.ui.createPagesDropdown
