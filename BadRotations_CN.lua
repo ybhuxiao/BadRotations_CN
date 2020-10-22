@@ -843,7 +843,7 @@ local locales={
 
   --德鲁伊：平衡
   ["Deadly Chicken"]="致命的咕咕",
-  ["Memekin Rotation"]="",
+ -- ["Memekin Rotation"]="",
   ["Sunfire targets"]="阳炎术 目标",
   ["Moonfire targets"]="月火术 目标",
   ["Stellar Flare targets"]="星辰耀斑 目标",
@@ -877,6 +877,21 @@ local locales={
   ["Oneth's Intuition"]="",
   ["Promisse Of Elune, The Moon Goddness"]="",
   ["Sephuz's Secret"]="赛秘密",
+  ["Typhoon"]="台风",
+  ["Safe Dots"]="安全Dots",
+  ["Max Stellar Flare Targets"]="最大星辰耀斑目标数",
+  ["Max Moonfire Targets"]="最大月火术目标数",
+  ["Max Sunfire Targets"]="最大阳炎术目标数",
+  ["Starfall Targets (0 for auto)"]="星辰坠落目标数(0为自动)",
+  ["Fury of Elune Targets"]="艾露恩之怒目标数",
+  ["Ignore dots during pewbuff"]="各种Buff期间忽略Dots",
+  ["Opener"]="起手循环",
+  ["Focused Azerite Beam"]="聚能艾泽里特射线",
+  ["Guardian Of Azeroth"]="艾泽拉斯守护者",
+  ["ConcentratedFlame - Heal"]="烈焰熔炉治疗",
+  ["ConcentratedFlame - DPS"]="烈焰熔炉输出",
+--  [""]="",
+
 
   --德鲁伊：野性
   ["Death Cat Mode"]="",
