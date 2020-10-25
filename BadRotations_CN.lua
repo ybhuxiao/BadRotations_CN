@@ -745,6 +745,15 @@ local locales={
   ["Concussive Shot"]="震荡射击",  
   ["Disengage"]="逃脱",  
   ["Feign Death"]="假死", 
+  ["Use TTD for Aspect and Bestial"]="用TTD来表示'面向'和'兽性'。",
+  ["Humanize Switching for Burn"]="人性化的攻击切换",
+  ["Corruption Management"]="腐蚀管理",
+  ["Enable Corruption"]="启用反腐蚀",
+  ["Ice Trap"]="冰冻陷阱",
+  ["Binding Shot"]="束缚射击",
+  ["Conc Shot"]="震荡射击",
+  ["Tar Trap"]="焦油陷阱",
+  ["Feign Thing"]="假死",
 
   --猎人：射击
   ["Piercing Shot Units"]="穿刺射击 单位",
