@@ -1,6 +1,6 @@
 ﻿## Interface: 90001
 ## Title: |cffa330c9BadRotations汉化
-## Notes: |cffa330c9BadRotations汉化，QQ群855255365，使用说明详见https://github.com/ybhuxiao/BadRotations_CN
+## Notes: |cffa330c9BadRotations汉化，QQ群1163067775，使用说明详见https://github.com/ybhuxiao/BadRotations_CN
 ## Author: 老胡和小伙伴们一起
 ## Dependencies: BadRotations
 ## Version: 8.0
