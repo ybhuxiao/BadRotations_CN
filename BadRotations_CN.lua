@@ -19,7 +19,7 @@ local locales={
   ["Healing Engine"]="治疗引擎",
   ["Other Features"]="其他功能",
   ["Save/Load Settings"]="保存/加载设置",
-
+  ["Smart Queue"]="智能队列",
 
   --config: enemies engine
   ["Dynamic Targetting"]="动态定位",
@@ -37,6 +37,15 @@ local locales={
   ["Only Known Units"]="只有已知单位",
   ["Crowd Control"]="人群控制",
   ["Enrages Handler"]="激怒处理",
+  ["Tank Aggro = Player Aggro"]="坦克激活=玩家激活",
+  ["Attack MC Targets"]="攻击MC(被控制)目标",
+  ["Enhanced Time to Die"]="增强的死亡时间",
+  ["Prioritize Totems"]="优先图腾",
+  ["Bursting Stack Limit"]="崩裂层数限制",
+  ["Dispel Only Whitelist"]="只驱散白名单",
+  ["Purge Only Whitelist"]="只净化白名单",
+  ["Interrupt Target"]="打断目标",
+  ["Interrupt Mark"]="打断标志",
 
   --config: general
   ["Auto Delay"]="自动延时",
@@ -53,6 +62,7 @@ local locales={
   ["Notify Not Unlocked"]="未解锁通知",
   ["Reset Options"]="重置选项",
   ["Reset Saved Profiles"]="重置保存的配置",
+  ["Target Validation Debug"]="目标验证调试",
 
   --config: healing engine
   ["HE Active"]="治疗引擎开启",
@@ -76,14 +86,38 @@ local locales={
   ["Disenchant"]="分解",
   ["Leather Scraps"]="皮革废料",
   ["Lockboxes"]="加锁的箱子",
-  ["Debug Timers"]="",
+  ["Pig Catcher"]="猪捕手(某个副本中抓猪)",
+  ["Fishing"]="钓鱼",
+  ["Fish Oil"]="鱼油",
+  ["Anti-Afk"]="反AFK(防止暂离)",
+  ["Quaking Helper"]="震荡助手",
+  ["Debug Timersr"]="调试计时器(用户无用)",
+  ["Cache Debuffs"]="缓存Debuffs(测试中)",
+  ["Unit ID In Tooltip"]="工具提示中的单位ID",
+  
   --config: save/loading settings
   ["Load Prior Saved Settings"]="加载设置",
-
+  ["Create New Settings Profiles or Load Existing"]="创建新配置或加载现有配置",
+  ["Export/Import from Settings Folder"]="从设置文件夹中导出/导入",
+  
+  --config:TrackerEngine
+  ["Main Settings"]="主要设置",
+  ["Enable Tracker"]="启用追踪器",
+  ["Draw Lines to Tracked Objects"]="为追踪目画线",
+  ["Auto Interact with Any Tracked Object"]="自动与追踪目标交互",
+  ["Rare Tracker"]="稀有追踪器",
+  ["Quest Tracker"]="任务追踪器",
+  ["Custom Tracker"]="自定义跟踪器",
+  ["Horrific Visions"]="惊魂幻象",
+  ["Bonus NPC Tracker"]="额外NPC追踪器",
+  ["Chest Tracker"]="箱子追踪器(只在英文端有效)",
+  ["Mailbox Tracker"]="信箱追踪器",
+  ["Odd Crystal Tracker"]="怪异水晶追踪器",
+  ["Potions Tracker"]="药水追踪器",
 
 
   --br：base options
-  ["Cast Debug"]="",
+  ["Cast Debug"]="Cast 调试",
   ["Ignore Combat"]="自动开怪",
   ["Mute Queue"]="",
   ["Use Crystal"]="",
@@ -689,6 +723,28 @@ local locales={
   ["Counter Shot"]="反制射击",
   ["Intimidation"]="胁迫",
   ["Intimidation - Int"]="胁迫 打断",
+  ["Pet"]="宠物",
+  ["Enemy Target Lock"]="敌方目标锁定",
+  ["Beast Mode"]="野兽模式",
+  ["Misdirection"]="误导",
+  ["Use Essence"]="使用精华",
+  ["Pet Target"]="宠物目标",
+  ["Bite / Claw"]="撕咬/爪击",
+  ["Cat-like Reflexes"]="灵猫敏捷",
+  ["Dash"]="急奔",
+  ["Fetch"]="拾回",
+  ["Play Dead / Wake Up"]="装死/唤醒",
+  ["Prowl / Spirit Walk"]="潜伏/灵魂行走",
+  ["Spirit Mend"]="灵魂治愈",
+  ["Survival of the Fittest"]="优胜劣汰",
+  ["Elixir"]="合剂",
+  ["Power Reactor"]="变频千兆振荡反应堆",
+  ["Ashvane's Razor Coral"]="艾什凡的锋锐珊瑚",
+  ["Pocket Sized Computation Device"]="口袋计算装置",
+  ["Spitting Cobra"]="喷毒眼镜蛇",
+  ["Concussive Shot"]="震荡射击",  
+  ["Disengage"]="逃脱",  
+  ["Feign Death"]="假死", 
 
   --猎人：射击
   ["Piercing Shot Units"]="穿刺射击 单位",
