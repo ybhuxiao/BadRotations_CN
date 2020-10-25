@@ -1,5 +1,7 @@
 # BadRotations_CN
 
+QQ群：1163067775
+
 ![插件选择](http://wowdata.top/static/img/br/eg.png)
 
 ## 1.使用说明
