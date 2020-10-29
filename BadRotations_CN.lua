@@ -754,6 +754,18 @@ local locales={
   ["Conc Shot"]="震荡射击",
   ["Tar Trap"]="焦油陷阱",
   ["Feign Thing"]="假死",
+  ["Tranquilizing Shot"]="宁神射击",
+  
+  --猎人：宠物
+  ["Master's Call - Cunning"]="主人的召唤-狡诈",
+  ["Primal Rage - Ferocity"]="原始暴怒-狂野",
+  ["Survival of the Fittest - Tenacity"]="优胜劣汰-坚韧",
+  ["Use Attack Ability"]="使用攻击能力",
+  ["Use Defense Ability"]="使用防御能力",
+  ["Use Debuff Ability"]="使用Debuff能力",
+  ["Use Heal Ability"]="使用治疗能力",
+  ["Use Purge Ability"]="使用净化能力",
+  ["Use Utility Ability"]="使用实用能力",
 
   --猎人：射击
   ["Piercing Shot Units"]="穿刺射击 单位",
