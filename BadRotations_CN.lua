@@ -48,7 +48,7 @@ local locales={
   ["Interrupt Mark"]="打断标记",
 
   --config: general
-  ["Auto Delay"]="自动延时",
+  ["Auto Delay"]="自动延迟",
   ["Bot Update Rate"]="BR执行率",
   ["Start/Stop BadRotations"]="开始/停止BR",
   ["Rotation Log"]="运行日志",
