@@ -1,5 +1,6 @@
 # BadRotations_CN
 
+已支持9.0暗影之地版本
 QQ群：1163067775
 
 ![插件选择](http://wowdata.top/static/img/br/eg.png)
