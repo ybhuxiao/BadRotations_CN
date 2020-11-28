@@ -169,6 +169,25 @@ local locales={
   ["Judgment"]="审判",
   ["Shield of the Righteous"]="正义盾击",
   ["Shield of the Righteous - HP"]="正义盾击-HP",
+  ["Auto cancel BoP"]="自动取消保护祝福",
+  ["Auto cancel DS"]="自动取消无敌",
+  ["Automatic Aura replacement"]="自动切换光环",
+  ["infinite Divine Steed key"]="无限神圣马驹 快捷键",
+  ["Trinkets 1"]="饰品1",
+  ["Trinkets 1 Mode"]="饰品2 模式",
+  ["Trinkets 2"]="饰品2",
+  ["Trinkets 2 Mode"]="饰品2 模式",
+  ["Holy Avenger with Wings"]="神圣复仇者",
+  ["Arcane Torrent Dispel"]="奥术洪流驱散",
+  ["Word of Glory"]="荣耀圣令",
+  ["Word of Glory - Party"]="荣耀圣令 - 团队",
+  ["Divine Toll"]="圣洁鸣钟",
+  ["Hammer of Wrath"]="愤怒之锤",
+  ["Stuns Black Units"]="不能被眩晕的单位",
+  ["Stun Spells"]="需要眩晕的单位",
+  ["HoJ Prio Units"]="看到就制裁之锤的单位",
+  
+  
 
   --圣骑士：神圣
   ["OOC Healing"]="非战斗中治疗",
@@ -1187,10 +1206,10 @@ C_Timer.NewTicker(.5, function()
     --修改下拉框
     
     --支持中文字体
-    DiesalFontNormal:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf",11 )
-    DiesalFontPixel:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 8 )
-    DiesalFontPixelOutLine:SetFont( "Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 8, "OUTLINE, MONOCHROME" )
-    DiesalFontPixel2:SetFont( "Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 8, "OUTLINE, MONOCHROME" )
+    DiesalFontNormal:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf",10 )
+    DiesalFontPixel:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6 )
+    DiesalFontPixelOutLine:SetFont( "Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6, "OUTLINE, MONOCHROME" )
+    DiesalFontPixel2:SetFont( "Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6, "OUTLINE, MONOCHROME" )
     print("br 汉化完成")
   end
 end)
