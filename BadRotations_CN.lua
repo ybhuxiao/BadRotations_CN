@@ -1027,6 +1027,7 @@ local locales={
   ["Wildgrowth"]="野性成长",
   ["Soothe"]="安抚",
   ["Cleave Mode"]="顺劈模式",
+  ["Wild Charge"]="野性冲锋",
 
   --德鲁伊：守护
   ["Growl"]="低吼",
