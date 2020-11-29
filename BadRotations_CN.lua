@@ -1105,7 +1105,17 @@ local locales={
   ["Flourish HOT Targets"]="繁盛 回春数量",
   ["HOT Time count"]="",
   ["Rejuvenation Mode"]="回春模式"
-
+  ["Owl Key"]="枭兽形态快捷键"
+  ["Break form for critical"]="危机时刻中断施法"
+  ["Break form for dispel"]="驱散时中断施法"
+  ["Break form for dots"]="补dot时中断施法"
+  ["Max RIP Targets"]="最大割裂目标数"
+  ["Bursting"]="崩裂层数"
+  ["Grievous Wounds"]="重伤"
+  ["Decaying Mind"]="衰落意志"
+  ["Auto Drink"]="自动喝水"
+  ["Sugar Crusted Fish Feast"]="焦糖鱼宴"
+  
 }
 
 --添加子配置
