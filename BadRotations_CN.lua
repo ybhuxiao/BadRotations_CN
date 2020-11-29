@@ -992,6 +992,14 @@ local locales={
   ["Guardian Of Azeroth"]="艾泽拉斯守护者",
   ["ConcentratedFlame - Heal"]="烈焰熔炉治疗",
   ["ConcentratedFlame - DPS"]="烈焰熔炉输出",
+  ["Cat Key"]="猎豹形态快捷键",
+  ["Bear Key"]="熊形态快捷键",
+  ["Travel Key"]="旅行形态快捷键",
+  ["Treants Key"]="树人形态快捷键",
+  ["Cat Charge"]="猎豹冲锋",
+  ["auto stealth"]="自动隐身",
+  ["auto dash"]="自动疾跑",
+  ["Bear Frenzies Regen HP"]="熊形态狂暴恢复",
 --  [""]="",
 
 
