@@ -1010,10 +1010,10 @@ local locales={
   ["Use Trinkets"]="使用饰品",
   ["Warrior Of Elune"]="艾露恩的战士",
   ["Fury Of Elune"]="艾露恩之怒",
-  ["Group Fury with CD"]="卡CD群体愤怒",
+  ["Group Fury with CD"]="组队卡CD愤怒",
   ["Incarnation/Celestial Alignment"]="化身/超凡之盟",
   ["Treant Targets"]="树人目标",
-  ["Group treants with CD"]="卡CD使用树人",
+  ["Group treants with CD"]="组队卡CD使用树人",
 --  [""]="",
 
 
