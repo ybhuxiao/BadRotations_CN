@@ -1016,6 +1016,17 @@ local locales={
   ["Skull Bash"]="迎头痛击",
   ["Maim"]="割碎",
   ["Prowl Mode"]="潜行模式",
+  ["Ferocious Bite Execute"]="使用凶猛撕咬",
+  ["Berserk/Tiger's Fury Pre-Pull"]="预判狂暴/猛虎之怒",
+  ["Pre-Pull Timer"]="预判定时器",
+  ["Multi-DoT Limit"]="DOT层数限制",
+  ["Primal Wrath Usage"]="使用原始之怒",
+  ["Augment Rune"]="增强物品",
+  ["Kyrian Bell"]="格里恩之铃",
+  ["Phial of Serenity"]="静谧之瓶",
+  ["Wildgrowth"]="野性成长",
+  ["Soothe"]="安抚",
+  ["Cleave Mode"]="顺劈模式",
 
   --德鲁伊：守护
   ["Growl"]="低吼",
