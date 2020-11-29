@@ -1014,7 +1014,7 @@ local locales={
   ["Incarnation/Celestial Alignment"]="化身/超凡之盟",
   ["Treant Targets"]="树人目标",
   ["Group treants with CD"]="组队卡CD使用树人",
-  ["Off-healing""]="关闭愈合",
+  ["Off-healing"]="关闭愈合",
 --  [""]="",
 
 
