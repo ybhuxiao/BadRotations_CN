@@ -1,4 +1,4 @@
 # These are supported funding model platforms
 
-github: # Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [ybhuxiao, gongmang1]
-custom: # Replace with up to 4 custom sponsorship URLs e.g., ['http://wowdata.top']
+github: [ybhuxiao, gongmang1]# Replace with up to 4 GitHub Sponsors-enabled usernames e.g., 
+custom: ['http://wowdata.top']# Replace with up to 4 custom sponsorship URLs e.g., 
