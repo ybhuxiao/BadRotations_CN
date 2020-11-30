@@ -1323,6 +1323,6 @@ C_Timer.NewTicker(.5, function()
         DiesalFontPixelOutLine:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6,
                                        "OUTLINE, MONOCHROME")
         DiesalFontPixel2:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6, "OUTLINE, MONOCHROME")
-        print("br 汉化完成")
+        print("br 汉化完成，最新版发布在https://github.com/ybhuxiao/BadRotations_CN")
     end
 end)
