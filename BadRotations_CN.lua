@@ -262,7 +262,7 @@ local locales = {
     ["Divine Toll"] = "圣洁鸣钟",
     ["Hammer of Wrath"] = "愤怒之锤",
     ["Stuns Black Units"] = "不能被眩晕的单位",
-    ["Stun Spells"] = "需要眩晕的单位",
+    ["Stun Spells"] = "需要眩晕的法术",
     ["HoJ Prio Units"] = "看到就制裁之锤的单位",
     
     
