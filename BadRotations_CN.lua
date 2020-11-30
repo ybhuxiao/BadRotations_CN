@@ -1174,7 +1174,7 @@ end
 
 --hook
 local hooked = false
-local debugging = true
+local debugging = false
 C_Timer.NewTicker(.5, function()
     if hooked then
         return ;
