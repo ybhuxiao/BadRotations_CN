@@ -1169,7 +1169,7 @@ C_Timer.NewTicker(.5, function()
     if hooked then
         return ;
     end
-    if br and br.ui and br.ui.createText and br.ui.createSection and br.ui.createPagesDropdown then
+    if br and br.ui and br.ui.createText and br.ui.createSection and br.ui.createPagesDropdown and br.ui.createDropdown then
         hooked = true
         --if isChecked and isChecked("br汉化调试开关") then
         --  debugging=true
