@@ -59,7 +59,7 @@ local locales = {
     ["Moon"] = "月亮", --dropdown val: 打断标记, Interrupt Mark
     ["Square"] = "方块", --dropdown val: 打断标记, Interrupt Mark
     ["Cross"] = "红叉", --dropdown val: 打断标记, Interrupt Mark
-    ["Skull"] = "Skull", --dropdown val: 打断标记, Interrupt Mark
+    ["Skull"] = "骷髅", --dropdown val: 打断标记, Interrupt Mark
     
     
     
