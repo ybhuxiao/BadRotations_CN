@@ -1099,6 +1099,7 @@ end
 --hook
 local hooked = false
 local debugging = true
+debugging=false
 C_Timer.NewTicker(.5, function()
   if hooked then return;end
   if br and br.ui and br.ui.createText and br.ui.createSection and br.ui.createPagesDropdown then
