@@ -116,7 +116,7 @@ local locales = {
     
     --config: general
     ["Auto Delay"] = "自动延迟",
-    ["Bot Update Rate"] = "BR执行率",
+    ["Bot Update Rate"] = "循环执行效率",
     ["Start/Stop BadRotations"] = "开始/停止BR",
     ["Rotation Log"] = "运行日志",
     ["Display Failcasts"] = "显示失败",
@@ -158,8 +158,8 @@ local locales = {
     ["Fish Oil"] = "鱼油",
     ["Anti-Afk"] = "反AFK(防止暂离)",
     ["Quaking Helper"] = "震荡助手",
-    ["Debug Timersr"] = "调试计时器(用户无用)",
-    ["Cache Debuffs"] = "缓存Debuffs(测试中)",
+    ["Debug Timers"] = "调试计时器",
+    ["Cache Debuffs"] = "缓存Debuffs",
     ["Unit ID In Tooltip"] = "工具提示中的单位ID",
     
     --config: save/loading settings
@@ -181,6 +181,17 @@ local locales = {
     ["Mailbox Tracker"] = "信箱追踪器",
     ["Odd Crystal Tracker"] = "怪异水晶追踪器",
     ["Potions Tracker"] = "药水追踪器",
+    
+    --Healing Options 治疗选项
+    ["Ignore Range Check"] = "忽略距离检查", --createText
+    ["Ignore Stack Count"] = "Ignore Stack Count", --createText
+    ["Bwonsamdi's Wrath HP"] = "邦桑迪的愤怒 HP", --createText
+    ["Reaping"] = "收割", --createText
+    ["Promise of Power"] = "力量应许", --createText
+    ["Toxic Brand"] = "剧毒烙印", --createText
+    ["Arcane Burst"] = "奥术震爆", --createText
+    ["Necrotic Rot"] = "死疽溃烂",
+    ["Decaying Strike Timer"] = "腐烂打击 计时", --createText
     
     
     --br：base options
@@ -258,7 +269,6 @@ local locales = {
     --圣骑士：神圣
     ["Aggressive Glimmer"] = "Aggressive Glimmer", --createText
     ["OOC Healing"] = "非战斗中治疗",
-    ["Necrotic Rot"] = "Necrotic Rot",
     ["Mastery bonus"] = "Mastery bonus",
     ["Pre-Pull Timer"] = "Pre-Pull Time",
     ["Judgment heal"] = "Judgment heal", --createText
@@ -1164,7 +1174,7 @@ end
 
 --hook
 local hooked = false
-local debugging = false
+local debugging = true
 C_Timer.NewTicker(.5, function()
     if hooked then
         return ;
