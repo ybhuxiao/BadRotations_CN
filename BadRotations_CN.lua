@@ -1,8 +1,12 @@
 --/print isChecked("Blessing of Freedom")
 local locales={
-
+  --createPagesDropdown部分
   ["Base Options"]="基础功能",
-  ["Rotation Options"]="循环功能",
+  ["Rotation Options"]="循环配置",
+  ["Healing Options"]="治疗选项",
+  ["Queue Engine"]="队列引擎",
+  ["Tracker Engine"]="追踪引擎",
+  ["Addon Debug Messages"]="插件调试消息",
 
 
   --createSection下拉模块
@@ -1094,6 +1098,7 @@ end
 
 --hook
 local hooked = false
+local debugging = true
 C_Timer.NewTicker(.5, function()
   if hooked then return;end
   if br and br.ui and br.ui.createText and br.ui.createSection and br.ui.createPagesDropdown then
@@ -1134,8 +1139,8 @@ C_Timer.NewTicker(.5, function()
 
       if text and locales[text] and locales[text]~="" then
         text = color..locales[text]
-      elseif locales[text]==nil then      
-        --print('["'..text..'"]="",')
+      elseif debugging and locales[text]==nil then
+        print('["'..text..'"]="",')
       end
       return original_createText(self, parent, color..text, true)
     end
@@ -1144,27 +1149,29 @@ C_Timer.NewTicker(.5, function()
     function br.ui.createSection(self, parent, sectionName, tooltip)
       if sectionName and locales[sectionName] and locales[sectionName]~="" then
         sectionName = locales[sectionName]
-      elseif locales[sectionName]==nil then
-        --print('["'..text..'"]="",')
+      elseif debugging and locales[sectionName]==nil then
+        print('["'..text..'"]="",')
       end
       return original_createSection(self, parent,sectionName,tooltip)
     end
 
-    --local original_createPagesDropdown = br.ui.createPagesDropdown
-    --function br.ui.createPagesDropdown(self,window, menuPages)
-    --  if window and window.pages and #window.pages>0 then
-    --    for i=1,#window.pages do
-    --      local pageName = window.pages[i][1]
-    --      if pageName and locales[pageName] and locales[pageName]~="" then
-    --        pageName = locales[pageName]
-    --      elseif locales[sectionName]==nil then
-    --        print('["'..pageName..'"]="",')
-    --      end
-    --      window.pages[i][1] = pageName
-    --    end
-    --  end
-    --  return original_createPagesDropdown(self,window, menuPages)
-    --end
+    local original_createPagesDropdown = br.ui.createPagesDropdown
+    function br.ui.createPagesDropdown(self,window, menuPages)
+      
+      --print(#window,#menuPages)
+      if #menuPages>0 then
+        for i=1,#menuPages do
+          local pageName = menuPages[i][1]
+          if pageName and locales[pageName] and locales[pageName]~="" then
+            pageName = locales[pageName]
+          elseif debugging and locales[pageName]==nil then
+            print('["'..pageName..'"]="",')
+          end
+          menuPages[i][1] = pageName
+        end
+      end
+      return original_createPagesDropdown(self,window, menuPages)
+    end
 
     C_Timer.After(2,function()
       BadRotationsButton:SetScript("OnEnter", function(self)
