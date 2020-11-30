@@ -1,7 +1,7 @@
 ﻿## Interface: 90002
 ## Title: |cffa330c9BadRotations汉化
 ## Notes: |cffa330c9BadRotations汉化，QQ群1163067775，使用说明详见https://github.com/ybhuxiao/BadRotations_CN
-## Author: 老胡、Richard、强力老猫、Windforce、稻草、奶糖等
+## Author: 老胡、Fengshen、强力老猫、Windforce、稻草、奶糖等
 ## Version: 8.0
 
 BadRotations_CN.lua
