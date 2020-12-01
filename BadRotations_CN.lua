@@ -198,6 +198,10 @@ local locales = {
     ["Load Prior Saved Settings"] = "加载设置",
     ["Create New Settings Profiles or Load Existing"] = "创建新配置或加载现有配置",
     ["Export/Import from Settings Folder"] = "从设置文件夹中导出/导入",
+	["FileName: "] = "文件名: ",
+	["Load"] = "加载",
+	["Export"] = "导出",
+	["Import"] = "导入",
     
     --config:TrackerEngine
     ["Main Settings"] = "主要设置",
