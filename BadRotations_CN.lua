@@ -1231,7 +1231,30 @@ local locales = {
     ["Decaying Mind"] = "衰落意志",
     ["Auto Drink"] = "自动喝水",
     ["Sugar Crusted Fish Feast"] = "焦糖鱼宴",
-    
+	["Freehold - pig"] = "自由镇抓猪",
+	["Dont DPS spotter"] = "不攻击观察者",
+	["Temple of Seth Heal"] = "塞塔里斯神庙里治疗",
+	["All - root the thing"] = "所有副本-缠绕单位",
+	["FH - root grenadier"] = "自由镇-缠绕投弹手",
+	["AD - root Spirit of Gold"] = "阿塔达萨-缠绕精英怪",
+	["KR - root Minions of Zul"] = "诸王之眠-缠绕祖尔的小兵",
+	["KR - animated gold"] = "诸王之眠- 开石化的精英怪",
+    ["Use Cloak"] = "使用披风",
+	["Eye Stacks"] = "眼罩层数",
+	["Smart Hot"] = "自动补HOT最多怪数",
+	["Use Bark w/Smart Hot"] = "补hot时使用树皮术",
+	["Smart Charge"] = "自动激活",
+	["Nourish"] = "滋养",
+	["Nourish - hot count"] = "滋养HOT层数",
+	["Photosynthesis"] = "光合作用",
+	["Photosynthesis Count"] = "光合作用层数",
+	["pre-hot in combat"] = "进战后预铺hot",
+	["HOT Time count"] = "HOT时间计数",
+	["Auto mass Resurrection"] = "自动群体复活",
+	["Aggressive Dots"] = "激进补DOT",
+	["Incarnation Targets"] = "使用化身目标数",
+	["Hibernate as Interrupt"] = "休眠",
+	
 }
 
 --添加子配置
