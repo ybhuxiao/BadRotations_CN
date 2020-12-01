@@ -17,9 +17,9 @@ local locales = {
     ["RightShift"] = "右边Shift", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
     ["RightAlt"] = "右边Alt", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
     ["None"] = "无", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
-    ["MMouse"] = "MMouse", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
-    ["Mouse4"] = "Mouse4", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
-    ["Mouse5"] = "Mouse5", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
+    ["MMouse"] = "鼠标中键", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
+    ["Mouse4"] = "鼠标4", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
+    ["Mouse5"] = "鼠标5", --圣盾术+牺牲：按键, Divine Shield + Aura of Sacrifice Key
     ["Mouseover"] = "鼠标指向", --, Unstable Temporal Time Shifter
     ["Never"] = "从不", --, Use Cloak
     ["Cool Downs"] = "冷却",
@@ -29,14 +29,22 @@ local locales = {
     ["DPS Health"] = "DPS血量",
     ["DPS Mana"] = "DPS蓝量",
     ["Cursor"] = "鼠标指向", --dropdown val: , 正义盾击 (Queue)
-    ["Units"] = "Units", --dropdown val: 任务追踪器, Quest Tracker
-    ["Objects"] = "Objects", --dropdown val: 任务追踪器, Quest Tracker
+    ["Units"] = "单位", --dropdown val: 任务追踪器, Quest Tracker
+    ["Objects"] = "物体", --dropdown val: 任务追踪器, Quest Tracker
     ["Both"] = "全部", --dropdown val: 任务追踪器, Quest Tracker
     ["Alternate"] = "轮流/间隔？", --dropdown val: 启用追踪器, Enable Tracker
-    ["System Only"] = "System Only", --dropdown val: 插件调试消息, Addon Debug Messages
-    ["Profile Only"] = "Profile Only", --dropdown val: 插件调试消息, Addon Debug Messages
+    ["System Only"] = "系统", --dropdown val: 插件调试消息, Addon Debug Messages
+    ["Profile Only"] = "配置", --dropdown val: 插件调试消息, Addon Debug Messages
     ["Enabled"] = "启用", --dropdown val: 钓鱼, Fishing
     ["Disabled"] = "禁用", --dropdown val: 钓鱼, Fishing
+	["Bait"] = "鱼饵",
+	["Lost Sole Bait"] = "失魂舌鰨鱼饵",
+	["Silvergill Pike Bait"] = "银鳍梭鱼饵",
+	["Pocked Bonefish Bait"] = "麻点骨鱼饵",
+	["Iridescent Amberjack Bait"] = "虹色琥珀鱼饵",
+	["Spinefin Piranha Bait"] = "刺鳍水虎鱼饵",
+	["Elysian Thade Bait"] = "极乐赛德鱼饵",
+	["SL"] = "暗影国度",
     ["BFA"] = "争霸艾泽拉斯", --dropdown val: 探矿, Prospect Ores
     ["Legion"] = "军团再临", --dropdown val: 探矿, Prospect Ores
     ["WoD"] = "德拉诺之王", --dropdown val: 探矿, Prospect Ores
@@ -52,14 +60,37 @@ local locales = {
     ["Furthest"] = "最远的", --dropdown val: 智能目标, Wise Target
     ["Focus"] = "焦点", --dropdown val: 打断目标, Interrupt Target
     ["Marked"] = "标记", --dropdown val: 打断目标, Interrupt Target
-    ["Star"] = "星星", --dropdown val: 打断标记, Interrupt Mark
-    ["Circle"] = "大饼", --dropdown val: 打断标记, Interrupt Mark
-    ["Diamond"] = "紫菱", --dropdown val: 打断标记, Interrupt Mark
-    ["Triangle"] = "三角", --dropdown val: 打断标记, Interrupt Mark
-    ["Moon"] = "月亮", --dropdown val: 打断标记, Interrupt Mark
-    ["Square"] = "方块", --dropdown val: 打断标记, Interrupt Mark
-    ["Cross"] = "红叉", --dropdown val: 打断标记, Interrupt Mark
-    ["Skull"] = "骷髅", --dropdown val: 打断标记, Interrupt Mark
+    ["|cffffff00Star"] = "|cffffff00星星", --dropdown val: 打断标记, Interrupt Mark
+    ["|cffffa500Circle"] = "|cffffa500大饼", --dropdown val: 打断标记, Interrupt Mark
+    ["|cff800080Diamond"] = "|cff800080紫菱", --dropdown val: 打断标记, Interrupt Mark
+    ["|cff008000Triangle"] = "|cff008000三角", --dropdown val: 打断标记, Interrupt Mark
+    ["|cffffffffMoon"] = "|cffffffff月亮", --dropdown val: 打断标记, Interrupt Mark
+    ["|cff0000ffSquare"] = "|cff0000ff方块", --dropdown val: 打断标记, Interrupt Mark
+    ["|cffff0000Cross"] = "|cffff0000红叉", --dropdown val: 打断标记, Interrupt Mark
+    ["|cffffffffSkull"] = "|cffffffff骷髅", --dropdown val: 打断标记, Interrupt Mark
+	["|cffFFFFFFNormal"] = "正常",
+	["|cffFFFFFFGround"] = "投掷地面",
+	["|cff00FF00Player Only"] = "自己",
+	["|cffFFFF00Selected Target"] = "目标",
+	["|cffFFFFFFPlayer and Target"] = "自己和目标",
+	["|cffFF0000Mouseover Target"] = "鼠标指向",
+	["|cffFFFFFFAny"] = "任何人",
+	["|cffFFFFFFPlayer"] = "自己",
+	["|cffFFFFFFTarget"] = "目标",
+	["|cffFFFFFFMouseover"] = "鼠标指向",
+	["|cffFFFFFFTank"] = "坦克",
+	["|cffFFFFFFHealer"] = "治疗",
+	["|cffFFFFFFHealer/Tank"] = "治疗/坦克",
+	["|cffFFFFFFHealer/Damage"] = "治疗/输出",
+	["|cff00FF00Target"] = "目标",
+	["|cffFF0000Mouseover"] = "鼠标指向",
+	["|cffFFBB00Auto"] = "自动",
+	["T/M"] = "目标/鼠标指向",
+	["T/M/F"] = "目标/鼠标指向/焦点",
+	["T/F"] = "目标/焦点",
+	-- [] = "任何人",
+	-- [] = "任何人",
+	-- [] = "任何人",
     
     
     
@@ -130,6 +161,7 @@ local locales = {
     ["Reset Options"] = "重置选项",
     ["Reset Saved Profiles"] = "重置保存的配置",
     ["Target Validation Debug"] = "目标验证调试",
+	["Auto Check for Updates"] = "自动检查更新",
     
     --config: healing engine
     ["HE Active"] = "治疗引擎开启",
@@ -148,8 +180,8 @@ local locales = {
     
     --config: other features
     ["Profession Helper"] = "专业助手",
-    ["Prospect Ores"] = "探矿",
-    ["Mill Herbs"] = "探药",
+    ["Prospect Ores"] = "炸矿",
+    ["Mill Herbs"] = "研磨草药",
     ["Disenchant"] = "分解",
     ["Leather Scraps"] = "皮革废料",
     ["Lockboxes"] = "加锁的箱子",
@@ -166,6 +198,10 @@ local locales = {
     ["Load Prior Saved Settings"] = "加载设置",
     ["Create New Settings Profiles or Load Existing"] = "创建新配置或加载现有配置",
     ["Export/Import from Settings Folder"] = "从设置文件夹中导出/导入",
+	["FileName: "] = "文件名: ",
+	["Load"] = "加载",
+	["Export"] = "导出",
+	["Import"] = "导入",
     
     --config:TrackerEngine
     ["Main Settings"] = "主要设置",
@@ -184,7 +220,7 @@ local locales = {
     
     --Healing Options 治疗选项
     ["Ignore Range Check"] = "忽略距离检查", --createText
-    ["Ignore Stack Count"] = "Ignore Stack Count", --createText
+    ["Ignore Stack Count"] = "忽略层数计数", --createText
     ["Bwonsamdi's Wrath HP"] = "邦桑迪的愤怒 HP", --createText
     ["Reaping"] = "收割", --createText
     ["Promise of Power"] = "力量应许", --createText
@@ -195,7 +231,7 @@ local locales = {
     
     
     --br：base options
-    ["Cast Debug"] = "Cast 调试",
+    ["Cast Debug"] = "施法调试",
     ["Ignore Combat"] = "自动开怪",
     ["Mute Queue"] = "无声队列",
     ["Use Crystal"] = "使用水晶",
@@ -235,6 +271,7 @@ local locales = {
     ["Blessing Of Sacrifice"] = "牺牲祝福",
     ["Blessing Of Sacrifice Target"] = "牺牲祝福目标",
     ["Redemption"] = "救赎",
+	["Engineering Revive"] = "工程战复",
     ["Blinding Light - INT"] = "打断：盲目之光",
     ["Hammer of Justice - INT"] = "打断：制裁之锤",
     ["Rebuke - INT"] = "打断：责难",
@@ -258,7 +295,8 @@ local locales = {
     ["Holy Avenger with Wings"] = "神圣复仇者",
     ["Arcane Torrent Dispel"] = "奥术洪流驱散",
     ["Word of Glory"] = "荣耀圣令",
-    ["Word of Glory - Party"] = "荣耀圣令 - 团队",
+	["Free Word of Glory"] = "免费荣耀圣令",
+    ["Word of Glory - Party"] = "荣耀圣令 - 队友",
     ["Divine Toll"] = "圣洁鸣钟",
     ["Hammer of Wrath"] = "愤怒之锤",
     ["Stuns Black Units"] = "不能被眩晕的单位",
@@ -1338,7 +1376,7 @@ C_Timer.NewTicker(.5, function()
                 GameTooltip:SetOwner(Minimap, "ANCHOR_CURSOR", 50, 50)
                 GameTooltip:SetText("BadRotations", 214 / 255, 25 / 255, 25 / 255)
                 GameTooltip:AddLine("by CuteOne")
-                GameTooltip:AddLine("汉化by老胡和他的朋友们，QQ群1163067775")
+                GameTooltip:AddLine("汉化by老胡和他的朋友们，QQ群597022336")
                 GameTooltip:AddLine("左键：开/关BR配置.", 1, 1, 1, 1)
                 GameTooltip:AddLine("右键：开/关脚本配置", 1, 1, 1, 1)
                 GameTooltip:AddLine("Shift+左键：开/关快捷工具栏.", 1, 1, 1, 1)
