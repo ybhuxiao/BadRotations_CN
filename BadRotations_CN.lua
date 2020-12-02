@@ -1349,9 +1349,11 @@ C_Timer.NewTicker(.5, function()
                 end
                 newTooltip = locales[tooltip] or locales[tooltipIgnoreColor]
                 if not newTooltip then
-                    print('["' .. tooltip .. '"]="' .. tooltip .. '",--createSpinner"')
-                    locales[tooltip] = tooltip
                     newTooltip = tooltip
+                    if debugging then
+                        print('["' .. tooltip .. '"]="' .. tooltip .. '",--createSpinner"')
+                        locales[tooltip] = tooltip
+                    end
                 end
             end
             return newTooltip
