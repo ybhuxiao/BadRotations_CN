@@ -88,6 +88,9 @@ local locales = {
 	["T/M"] = "目标/鼠标指向",
 	["T/M/F"] = "目标/鼠标指向/焦点",
 	["T/F"] = "目标/焦点",
+	["BOTH"] = "全部",
+	["HEAL"] = "治疗",
+	["Manual"] = "手动",
 	-- [] = "任何人",
 	-- [] = "任何人",
 	-- [] = "任何人",
@@ -1254,6 +1257,7 @@ local locales = {
 	["Aggressive Dots"] = "激进补DOT",
 	["Incarnation Targets"] = "使用化身目标数",
 	["Hibernate as Interrupt"] = "休眠",
+	["Convoke Spirits"] = "万灵之召",
 	
 }
 
