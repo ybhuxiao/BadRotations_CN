@@ -3,6 +3,30 @@ local locales = {
     
     --todo，大家没事可以补充补充
     
+    --tooltip部分
+    ["Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1"] = "Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1", --createSpinner
+    ["Check to enable Professions Helper."] = "Check to enable Professions Helper.", --createSpinner "专业助手Profession Helper"
+    ["Adjust the update rate of Bot operations. Increase to improve FPS but may cause reaction delays. Will be ignored if Auto Delay is checked. Default: 0.1"] = "Adjust the update rate of Bot operations. Increase to improve FPS but may cause reaction delays. Will be ignored if Auto Delay is checked. Default: 0.1", --createSpinner"
+    ["Check this to display developer debug messages."] = "显示debug信息", --createSpinner"
+    ["Sets Autloot on/off."] = "1Sets Autloot on/off.", --createSpinner"
+    ["Will alert you at the set interval when Unlocker is not attached."] = "如果解锁失败就一直提醒", --createSpinner"
+    ["Define a key which pauses the rotation."] = "定义暂停循环的快捷键", --createSpinner"
+    ["Check if you want to use Wise Targetting, if unchecked there will be no priorisation from hp/range."] = "Check if you want to use Wise Targetting, if unchecked there will be no priorisation from hp/range.", --createSpinner"
+    ["**Requires Safe Damage Check** - Set to desired limit, will still dps targets but not kill until below limit."] = "**Requires Safe Damage Check** - Set to desired limit, will still dps targets but not kill until below limit.", --createSpinner"
+    ["Interrupt target settings."] = "Interrupt target settings.", --createSpinner"
+    ["Mark to interrupt if Marked is selected in Interrupt Target."] = "Mark to interrupt if Marked is selected in Interrupt Target.", --createSpinner"
+    ["Health Percent to Cast At"] = "Health Percent to Cast At", --createSpinner"
+    ["Mana Percent to Drink At"] = "Mana Percent to Drink At", --createSpinner"
+    ["Health Percentage to use at."] = "Health Percentage to use at.", --createSpinner"
+    ["Target for LoH"] = "Target for LoH", --createSpinner"
+    ["Target for BoP"] = "Target for BoP", --createSpinner"
+    ["Target for BoS"] = "Target for BoS", --createSpinner"
+    ["When to use this essence"] = "When to use this essence", --createSpinner"
+    ["Minimum hurting friends"] = "Minimum hurting friends", --createSpinner"
+    ["Only Use Infusion Procs."] = "Only Use Infusion Procs.", --createSpinner"
+    ["Target for BF"] = "Target for BF", --createSpinner"
+    ["Target for LoM after FoL"] = "Target for LoM after FoL", --createSpinner"
+    ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."]="Check this to allow dynamic targetting. If unchecked, profile will only attack current target.",--createSpinner"
     
     --下拉框的部分
     ["All"] = "全部", --, LoM after FoL Target
@@ -37,14 +61,14 @@ local locales = {
     ["Profile Only"] = "配置", --dropdown val: 插件调试消息, Addon Debug Messages
     ["Enabled"] = "启用", --dropdown val: 钓鱼, Fishing
     ["Disabled"] = "禁用", --dropdown val: 钓鱼, Fishing
-	["Bait"] = "鱼饵",
-	["Lost Sole Bait"] = "失魂舌鰨鱼饵",
-	["Silvergill Pike Bait"] = "银鳍梭鱼饵",
-	["Pocked Bonefish Bait"] = "麻点骨鱼饵",
-	["Iridescent Amberjack Bait"] = "虹色琥珀鱼饵",
-	["Spinefin Piranha Bait"] = "刺鳍水虎鱼饵",
-	["Elysian Thade Bait"] = "极乐赛德鱼饵",
-	["SL"] = "暗影国度",
+    ["Bait"] = "鱼饵",
+    ["Lost Sole Bait"] = "失魂舌鰨鱼饵",
+    ["Silvergill Pike Bait"] = "银鳍梭鱼饵",
+    ["Pocked Bonefish Bait"] = "麻点骨鱼饵",
+    ["Iridescent Amberjack Bait"] = "虹色琥珀鱼饵",
+    ["Spinefin Piranha Bait"] = "刺鳍水虎鱼饵",
+    ["Elysian Thade Bait"] = "极乐赛德鱼饵",
+    ["SL"] = "暗影国度",
     ["BFA"] = "争霸艾泽拉斯", --dropdown val: 探矿, Prospect Ores
     ["Legion"] = "军团再临", --dropdown val: 探矿, Prospect Ores
     ["WoD"] = "德拉诺之王", --dropdown val: 探矿, Prospect Ores
@@ -68,29 +92,29 @@ local locales = {
     ["|cff0000ffSquare"] = "|cff0000ff方块", --dropdown val: 打断标记, Interrupt Mark
     ["|cffff0000Cross"] = "|cffff0000红叉", --dropdown val: 打断标记, Interrupt Mark
     ["|cffffffffSkull"] = "|cffffffff骷髅", --dropdown val: 打断标记, Interrupt Mark
-	["|cffFFFFFFNormal"] = "正常",
-	["|cffFFFFFFGround"] = "投掷地面",
-	["|cff00FF00Player Only"] = "自己",
-	["|cffFFFF00Selected Target"] = "目标",
-	["|cffFFFFFFPlayer and Target"] = "自己和目标",
-	["|cffFF0000Mouseover Target"] = "鼠标指向",
-	["|cffFFFFFFAny"] = "任何人",
-	["|cffFFFFFFPlayer"] = "自己",
-	["|cffFFFFFFTarget"] = "目标",
-	["|cffFFFFFFMouseover"] = "鼠标指向",
-	["|cffFFFFFFTank"] = "坦克",
-	["|cffFFFFFFHealer"] = "治疗",
-	["|cffFFFFFFHealer/Tank"] = "治疗/坦克",
-	["|cffFFFFFFHealer/Damage"] = "治疗/输出",
-	["|cff00FF00Target"] = "目标",
-	["|cffFF0000Mouseover"] = "鼠标指向",
-	["|cffFFBB00Auto"] = "自动",
-	["T/M"] = "目标/鼠标指向",
-	["T/M/F"] = "目标/鼠标指向/焦点",
-	["T/F"] = "目标/焦点",
-	-- [] = "任何人",
-	-- [] = "任何人",
-	-- [] = "任何人",
+    ["|cffFFFFFFNormal"] = "正常",
+    ["|cffFFFFFFGround"] = "投掷地面",
+    ["|cff00FF00Player Only"] = "自己",
+    ["|cffFFFF00Selected Target"] = "目标",
+    ["|cffFFFFFFPlayer and Target"] = "自己和目标",
+    ["|cffFF0000Mouseover Target"] = "鼠标指向",
+    ["|cffFFFFFFAny"] = "任何人",
+    ["|cffFFFFFFPlayer"] = "自己",
+    ["|cffFFFFFFTarget"] = "目标",
+    ["|cffFFFFFFMouseover"] = "鼠标指向",
+    ["|cffFFFFFFTank"] = "坦克",
+    ["|cffFFFFFFHealer"] = "治疗",
+    ["|cffFFFFFFHealer/Tank"] = "治疗/坦克",
+    ["|cffFFFFFFHealer/Damage"] = "治疗/输出",
+    ["|cff00FF00Target"] = "目标",
+    ["|cffFF0000Mouseover"] = "鼠标指向",
+    ["|cffFFBB00Auto"] = "自动",
+    ["T/M"] = "目标/鼠标指向",
+    ["T/M/F"] = "目标/鼠标指向/焦点",
+    ["T/F"] = "目标/焦点",
+    -- [] = "任何人",
+    -- [] = "任何人",
+    -- [] = "任何人",
     
     
     
@@ -161,7 +185,7 @@ local locales = {
     ["Reset Options"] = "重置选项",
     ["Reset Saved Profiles"] = "重置保存的配置",
     ["Target Validation Debug"] = "目标验证调试",
-	["Auto Check for Updates"] = "自动检查更新",
+    ["Auto Check for Updates"] = "自动检查更新",
     
     --config: healing engine
     ["HE Active"] = "治疗引擎开启",
@@ -198,10 +222,10 @@ local locales = {
     ["Load Prior Saved Settings"] = "加载设置",
     ["Create New Settings Profiles or Load Existing"] = "创建新配置或加载现有配置",
     ["Export/Import from Settings Folder"] = "从设置文件夹中导出/导入",
-	["FileName: "] = "文件名: ",
-	["Load"] = "加载",
-	["Export"] = "导出",
-	["Import"] = "导入",
+    ["FileName: "] = "文件名: ",
+    ["Load"] = "加载",
+    ["Export"] = "导出",
+    ["Import"] = "导入",
     
     --config:TrackerEngine
     ["Main Settings"] = "主要设置",
@@ -271,7 +295,7 @@ local locales = {
     ["Blessing Of Sacrifice"] = "牺牲祝福",
     ["Blessing Of Sacrifice Target"] = "牺牲祝福目标",
     ["Redemption"] = "救赎",
-	["Engineering Revive"] = "工程战复",
+    ["Engineering Revive"] = "工程战复",
     ["Blinding Light - INT"] = "打断：盲目之光",
     ["Hammer of Justice - INT"] = "打断：制裁之锤",
     ["Rebuke - INT"] = "打断：责难",
@@ -295,7 +319,7 @@ local locales = {
     ["Holy Avenger with Wings"] = "神圣复仇者",
     ["Arcane Torrent Dispel"] = "奥术洪流驱散",
     ["Word of Glory"] = "荣耀圣令",
-	["Free Word of Glory"] = "免费荣耀圣令",
+    ["Free Word of Glory"] = "免费荣耀圣令",
     ["Word of Glory - Party"] = "荣耀圣令 - 队友",
     ["Divine Toll"] = "圣洁鸣钟",
     ["Hammer of Wrath"] = "愤怒之锤",
@@ -1231,30 +1255,30 @@ local locales = {
     ["Decaying Mind"] = "衰落意志",
     ["Auto Drink"] = "自动喝水",
     ["Sugar Crusted Fish Feast"] = "焦糖鱼宴",
-	["Freehold - pig"] = "自由镇抓猪",
-	["Dont DPS spotter"] = "不攻击观察者",
-	["Temple of Seth Heal"] = "塞塔里斯神庙里治疗",
-	["All - root the thing"] = "所有副本-缠绕单位",
-	["FH - root grenadier"] = "自由镇-缠绕投弹手",
-	["AD - root Spirit of Gold"] = "阿塔达萨-缠绕精英怪",
-	["KR - root Minions of Zul"] = "诸王之眠-缠绕祖尔的小兵",
-	["KR - animated gold"] = "诸王之眠- 开石化的精英怪",
+    ["Freehold - pig"] = "自由镇抓猪",
+    ["Dont DPS spotter"] = "不攻击观察者",
+    ["Temple of Seth Heal"] = "塞塔里斯神庙里治疗",
+    ["All - root the thing"] = "所有副本-缠绕单位",
+    ["FH - root grenadier"] = "自由镇-缠绕投弹手",
+    ["AD - root Spirit of Gold"] = "阿塔达萨-缠绕精英怪",
+    ["KR - root Minions of Zul"] = "诸王之眠-缠绕祖尔的小兵",
+    ["KR - animated gold"] = "诸王之眠- 开石化的精英怪",
     ["Use Cloak"] = "使用披风",
-	["Eye Stacks"] = "眼罩层数",
-	["Smart Hot"] = "自动补HOT最多怪数",
-	["Use Bark w/Smart Hot"] = "补hot时使用树皮术",
-	["Smart Charge"] = "自动激活",
-	["Nourish"] = "滋养",
-	["Nourish - hot count"] = "滋养HOT层数",
-	["Photosynthesis"] = "光合作用",
-	["Photosynthesis Count"] = "光合作用层数",
-	["pre-hot in combat"] = "进战后预铺hot",
-	["HOT Time count"] = "HOT时间计数",
-	["Auto mass Resurrection"] = "自动群体复活",
-	["Aggressive Dots"] = "激进补DOT",
-	["Incarnation Targets"] = "使用化身目标数",
-	["Hibernate as Interrupt"] = "休眠",
-	
+    ["Eye Stacks"] = "眼罩层数",
+    ["Smart Hot"] = "自动补HOT最多怪数",
+    ["Use Bark w/Smart Hot"] = "补hot时使用树皮术",
+    ["Smart Charge"] = "自动激活",
+    ["Nourish"] = "滋养",
+    ["Nourish - hot count"] = "滋养HOT层数",
+    ["Photosynthesis"] = "光合作用",
+    ["Photosynthesis Count"] = "光合作用层数",
+    ["pre-hot in combat"] = "进战后预铺hot",
+    ["HOT Time count"] = "HOT时间计数",
+    ["Auto mass Resurrection"] = "自动群体复活",
+    ["Aggressive Dots"] = "激进补DOT",
+    ["Incarnation Targets"] = "使用化身目标数",
+    ["Hibernate as Interrupt"] = "休眠",
+    
 }
 
 --添加子配置
@@ -1313,6 +1337,25 @@ C_Timer.NewTicker(.5, function()
         --  return original_createCheckbox(self, parent, color..text, tooltip, checked)
         --end
         
+        --获取tooltip的中文
+        local function getToolTipCN(tooltip)
+            local newTooltip = ""
+            if tooltip == nil or #tooltip == 0 then
+            
+            else
+                local tooltipIgnoreColor
+                if startswith(tooltip, "|c") and #tooltip > 10 then
+                    tooltipIgnoreColor = string.sub(tooltip, 11, #tooltip)
+                end
+                newTooltip = locales[tooltip] or locales[tooltipIgnoreColor]
+                if not newTooltip then
+                    print('["' .. tooltip .. '"]="' .. tooltip .. '",--createSpinner"')
+                    locales[tooltip] = tooltip
+                    newTooltip = tooltip
+                end
+            end
+            return newTooltip
+        end
         
         --hook createText方法
         local original_createText = br.ui.createText
@@ -1343,6 +1386,7 @@ C_Timer.NewTicker(.5, function()
                 --print('["' .. sectionName .. '"]="",')
                 print('["' .. sectionName .. '"]="' .. sectionName .. '",--' .. 'createSection')
             end
+            local tooltip = getToolTipCN(tooltip)
             return original_createSection(self, parent, sectionName, tooltip)
         end
         
@@ -1391,7 +1435,17 @@ C_Timer.NewTicker(.5, function()
                 tinsert(newItemlist, optionName)
             end
             
-            return original_createDropdown(self, parent, text, newItemlist, default, tooltip, tooltipDrop, hideCheckbox)
+            local tooltip = getToolTipCN(tooltip)
+            return original_createDropdown(self, parent, text, newItemlist, default, tooltip, tooltipDrop,
+                                           hideCheckbox)
+        end
+        
+        --createSpinner的tooltip
+        local original_createSpinner = br.ui.createSpinner
+        function br.ui.createSpinner(self, parent, text, number, min, max, step, tooltip, tooltipSpin, hideCheckbox)
+            local tooltip = getToolTipCN(tooltip)
+            return original_createSpinner(self, parent, text, number, min, max, step, tooltip, tooltipSpin,
+                                          hideCheckbox)
         end
         
         C_Timer.After(2, function()
