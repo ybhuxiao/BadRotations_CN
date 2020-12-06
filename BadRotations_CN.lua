@@ -1234,6 +1234,13 @@ local locales = {
     ["Ironfur"] = "铁鬃",
     ["Rage of the Sleeper"] = "沉睡者之怒",
     ["Incapacitating Roar"] = "夺魂咆哮",
+	["Open World"] = "开放世界(猎豹形态)",
+	["Travel Form Auto Shift"] = "Shift旅行形态",
+	["Auto Maul"] = "自动重殴",
+	["Use Concentrated Flame"] = "使用火红烈焰",
+	["Concentrated Flame Heal"] = "火红烈焰治疗",
+	["Lucid Dreams"] = "清醒梦境",
+	["Anima of Death"] = "死亡心能",
 
     --德鲁伊：恢复
     ["DBM cast Rejuvenation"] = "DBM预铺 回春术",
