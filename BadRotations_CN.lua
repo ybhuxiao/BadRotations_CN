@@ -1241,6 +1241,16 @@ local locales = {
 	["Concentrated Flame Heal"] = "火红烈焰治疗",
 	["Lucid Dreams"] = "清醒梦境",
 	["Anima of Death"] = "死亡心能",
+	["Feral Affinity"] = "野性亲和",
+	["Auto Stealth in Cat Form"] = "猎豹形态自动隐形",
+	["Auto Dash in Cat Form"] = "猎豹形态自动疾跑",
+	["Ironfur (No Aggro)"] = "铁鬃(无仇恨)",
+	["Spam Mangle during Incarnation"] = "化生时群体缠绕",
+	["Spam Thrash during Incarnation"] = "化生时群体痛击",
+	["OOC Swiftmend"] = "脱战迅捷治愈",
+	["OOC Rejuvenation"] = "脱战回春",
+	["Friendly Targets"] = "友方目标",
+	["Incapacitating Roar Logic (M+)"] = "暗影过度大秘境夺魂咆哮",
 
     --德鲁伊：恢复
     ["DBM cast Rejuvenation"] = "DBM预铺 回春术",
