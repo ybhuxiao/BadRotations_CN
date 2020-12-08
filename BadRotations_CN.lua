@@ -1352,12 +1352,21 @@ local function startswith(str, substr)
     end
 end
 
+local brName="BadRotations"
+for i = 1, GetNumAddOns() do
+    local name, title = GetAddOnInfo(i)
+    if title == "|cffa330c9BadRotations" then
+        brName = name
+        break
+    end
+end
+
 --ADDON_LOADED
 local f = CreateFrame("frame")
 f:RegisterEvent("ADDON_LOADED")
 local original_createConfigWindow
 f:SetScript("OnEvent", function(self, event, addonName)
-    if addonName == "__br" then
+    if addonName == brName then
         original_createConfigWindow = br.ui.createConfigWindow
         br.ui.createConfigWindow = function()
             return
