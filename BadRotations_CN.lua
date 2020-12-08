@@ -1362,26 +1362,26 @@ for i = 1, GetNumAddOns() do
 end
 
 --ADDON_LOADED
-local f = CreateFrame("frame")
-f:RegisterEvent("ADDON_LOADED")
-local original_createConfigWindow
-f:SetScript("OnEvent", function(self, event, addonName)
-    if addonName == brName then
-        if br and br.ui and br.ui.createConfigWindow then
-            original_createConfigWindow = br.ui.createConfigWindow
-            br.ui.createConfigWindow = function()
-                return
-            end
-            C_Timer.After(2, function()
-                br.ui:closeWindow("all")
-                br.ui.window.config = {}
-                original_createConfigWindow()
-                br.ui:toggleWindow("config")
-                --br.ui:toggleWindow("help")
-            end)
-        end
-    end
-end)
+--local f = CreateFrame("frame")
+--f:RegisterEvent("ADDON_LOADED")
+--local original_createConfigWindow
+--f:SetScript("OnEvent", function(self, event, addonName)
+--    if addonName == brName then
+--        if br and br.ui and br.ui.createConfigWindow then
+--            original_createConfigWindow = br.ui.createConfigWindow
+--            br.ui.createConfigWindow = function()
+--                return
+--            end
+--            C_Timer.After(2, function()
+--                br.ui:closeWindow("all")
+--                br.ui.window.config = {}
+--                original_createConfigWindow()
+--                br.ui:toggleWindow("config")
+--                --br.ui:toggleWindow("help")
+--            end)
+--        end
+--    end
+--end)
 
 --hook
 local hooked = false
