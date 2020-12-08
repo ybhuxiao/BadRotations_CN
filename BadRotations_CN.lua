@@ -26,7 +26,7 @@ local locales = {
     ["Only Use Infusion Procs."] = "Only Use Infusion Procs.", --createSpinner"
     ["Target for BF"] = "Target for BF", --createSpinner"
     ["Target for LoM after FoL"] = "Target for LoM after FoL", --createSpinner"
-    ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."]="Check this to allow dynamic targetting. If unchecked, profile will only attack current target.",--createSpinner"
+    ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."] = "Check this to allow dynamic targetting. If unchecked, profile will only attack current target.", --createSpinner"
     
     --下拉框的部分
     ["All"] = "全部", --, LoM after FoL Target
@@ -1302,6 +1302,29 @@ local function startswith(str, substr)
     end
 end
 
+--ADDON_LOADED
+local f = CreateFrame("frame")
+f:RegisterEvent("ADDON_LOADED")
+local original_createConfigWindow
+f:SetScript("OnEvent", function(self, event, addonName)
+    if addonName == "__br" then
+        original_createConfigWindow = br.ui.createConfigWindow
+        br.ui.createConfigWindow = function()
+            return
+        end
+    end
+    C_Timer.After(2, function()
+        if br then
+            br.ui:closeWindow("all")
+            br.ui.window.config = {}
+            original_createConfigWindow()
+            br.ui:toggleWindow("config")
+            --br.ui:toggleWindow("help")
+        end
+    end)
+end)
+
+
 --hook
 local hooked = false
 local debugging = false
@@ -1450,22 +1473,24 @@ C_Timer.NewTicker(.5, function()
                                           hideCheckbox)
         end
         
-        C_Timer.After(2, function()
-            BadRotationsButton:SetScript("OnEnter", function(self)
-                GameTooltip:SetOwner(Minimap, "ANCHOR_CURSOR", 50, 50)
-                GameTooltip:SetText("BadRotations", 214 / 255, 25 / 255, 25 / 255)
-                GameTooltip:AddLine("by CuteOne")
-                GameTooltip:AddLine("汉化by老胡和他的朋友们，QQ群597022336")
-                GameTooltip:AddLine("左键：开/关BR配置.", 1, 1, 1, 1)
-                GameTooltip:AddLine("右键：开/关脚本配置", 1, 1, 1, 1)
-                GameTooltip:AddLine("Shift+左键：开/关快捷工具栏.", 1, 1, 1, 1)
-                --GameTooltip:AddLine("Alt+Shift+LeftButton to drag.", 1, 1, 1, 1)
-                --GameTooltip:AddLine("Middle Click to open help frame11.", 1, 1, 1, 1)
-                GameTooltip:Show()
-            end)
-            BadRotationsButton:SetScript("OnLeave", function(self)
-                GameTooltip:Hide()
-            end)
+        C_Timer.After(5, function()
+            if BadRotationsButton then
+                BadRotationsButton:SetScript("OnEnter", function(self)
+                    GameTooltip:SetOwner(Minimap, "ANCHOR_CURSOR", 50, 50)
+                    GameTooltip:SetText("BadRotations", 214 / 255, 25 / 255, 25 / 255)
+                    GameTooltip:AddLine("by CuteOne")
+                    GameTooltip:AddLine("汉化by老胡和他的朋友们，QQ群597022336")
+                    GameTooltip:AddLine("左键：开/关BR配置.", 1, 1, 1, 1)
+                    GameTooltip:AddLine("右键：开/关脚本配置", 1, 1, 1, 1)
+                    GameTooltip:AddLine("Shift+左键：开/关快捷工具栏.", 1, 1, 1, 1)
+                    --GameTooltip:AddLine("Alt+Shift+LeftButton to drag.", 1, 1, 1, 1)
+                    --GameTooltip:AddLine("Middle Click to open help frame11.", 1, 1, 1, 1)
+                    GameTooltip:Show()
+                end)
+                BadRotationsButton:SetScript("OnLeave", function(self)
+                    GameTooltip:Hide()
+                end)
+            end
         end)
         
         
