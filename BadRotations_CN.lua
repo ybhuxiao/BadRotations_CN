@@ -297,6 +297,8 @@ local locales = {
     ["Pause Mode"] = "快捷键：暂停模式",
     ["Mover Mode"] = "快捷键：移动战模式",
     ["Healer Mode"] = "快捷键：治疗模式",
+	["Legendary Support"] = "支持传说物品",
+	["Ignore Combat Checks"] = "自动开怪",
     
     --圣骑士：防护
     ["Blessing of Freedom"] = "自由祝福",
@@ -1221,6 +1223,7 @@ local locales = {
     ["Soothe"] = "安抚",
     ["Cleave Mode"] = "顺劈模式",
     ["Wild Charge"] = "野性冲锋",
+	["Covenant Ability"] = "盟约技能",
     
     --德鲁伊：守护
     ["Growl"] = "低吼",
