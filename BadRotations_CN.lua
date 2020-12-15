@@ -1254,6 +1254,9 @@ local locales = {
     ["OOC Rejuvenation"] = "脱战回春",
     ["Friendly Targets"] = "友方目标",
     ["Incapacitating Roar Logic (M+)"] = "暗影过度大秘境夺魂咆哮",
+	["Big Hit Oh Shit!"] = "群攻模式",
+	["Use Covenant"] = "使用格里恩之铃",
+	["Incarnation/Berserk"] = "化生/狂暴",
     
     --德鲁伊：恢复
     ["DBM cast Rejuvenation"] = "DBM预铺 回春术",
