@@ -1359,7 +1359,8 @@ local locales = {
     ["Heart of the Wild"] = "野性之心",
     ["DARK TITAN"] = "黑暗泰坦的回忆",
 	["Natures Swiftness"] = "自然迅捷",
-    
+    ["Mist - Spirit vulpin"] = "迷雾-幻影仙狐",
+	["Plague - Globgrod"] = " 凋魂-粘稠的大杂烩",
 }
 
 --添加子配置
