@@ -1358,7 +1358,7 @@ local locales = {
     ["Convoke Spirits"] = "万灵之召",
     ["Heart of the Wild"] = "野性之心",
     ["DARK TITAN"] = "黑暗泰坦的回忆",
-	["Nature's Swiftness"] = "自然迅捷",
+	["Natures Swiftness"] = "自然迅捷",
     
 }
 
