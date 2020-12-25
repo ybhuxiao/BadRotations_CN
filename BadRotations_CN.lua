@@ -27,7 +27,8 @@ local locales = {
     ["Target for BF"] = "Target for BF", --createSpinner"
     ["Target for LoM after FoL"] = "Target for LoM after FoL", --createSpinner"
     ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."] = "Check this to allow dynamic targetting. If unchecked, profile will only attack current target.", --createSpinner"
-    
+    ["If checked, it will add incoming health from other healers to hp. Check this if you want to prevent overhealing units."] = "如果使用它.它会将来自其他治疗者(包括自己)的预计治疗量添加到hp中,以防止过量治疗(建议读条治疗职业开启)",
+	
     --下拉框的部分
     ["All"] = "全部", --, LoM after FoL Target
     ["Tanks"] = "坦克", --, LoM after FoL Target
@@ -232,7 +233,7 @@ local locales = {
     ["Prioritize Tank"] = "优先坦克",
     ["Prioritize Debuff"] = "优先Debuff",
     ["Ignore Absorbs"] = "忽略吸收效果",
-    ["Incoming Heals"] = "预铺治疗",
+    ["Incoming Heals"] = "预计治疗",
     ["Overhealing Cancel"] = "取消过量治疗",
     ["Dispel delay"] = "延迟驱散",
     ["Healer Line of Sight Indicator"] = "治疗视线指示",
@@ -365,7 +366,10 @@ local locales = {
     ["HoJ Prio Units"] = "看到就制裁之锤的单位",
     ["Use Trinkets 1"] = "使用饰品 1",
     ["Use Trinkets 2"] = "使用饰品 2",
-    
+    ["PoS removes Necrotic"] = "静谧之瓶消除死疽",
+	["OOC FoL"] = "非战斗圣光闪现",
+	["OOC FoL Target"] = "非战斗圣光闪现 目标",
+
     --圣骑士：神圣
     ["Aggressive Glimmer"] = "Aggressive Glimmer", --createText
     ["OOC Healing"] = "非战斗中治疗",
