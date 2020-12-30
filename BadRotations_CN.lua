@@ -369,6 +369,7 @@ local locales = {
     ["PoS removes Necrotic"] = "静谧之瓶消除死疽",
 	["OOC FoL"] = "非战斗圣光闪现",
 	["OOC FoL Target"] = "非战斗圣光闪现 目标",
+	["Will to"] = "生存意志",
 
     --圣骑士：神圣
     ["Aggressive Glimmer"] = "Aggressive Glimmer", --createText
