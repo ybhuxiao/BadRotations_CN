@@ -4,20 +4,20 @@ local locales = {
     --todo，大家没事可以补充补充
 
     --tooltip部分
-    ["Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1"] = "Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1", --createSpinner
-    ["Check to enable Professions Helper."] = "Check to enable Professions Helper.", --createSpinner "专业助手Profession Helper"
-    ["Adjust the update rate of Bot operations. Increase to improve FPS but may cause reaction delays. Will be ignored if Auto Delay is checked. Default: 0.1"] = "Adjust the update rate of Bot operations. Increase to improve FPS but may cause reaction delays. Will be ignored if Auto Delay is checked. Default: 0.1", --createSpinner"
+    ["Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1"] = "设置所需的时间启动预拉(需要DBM). 最小: 1 / 最大: 10 / 间隔: 1", --createSpinner
+    ["Check to enable Professions Helper."] = "启用专业助手.", --createSpinner "专业助手Profession Helper"
+    ["Adjust the update rate of Bot operations. Increase to improve FPS but may cause reaction delays. Will be ignored if Auto Delay is checked. Default: 0.1"] = "调整脚本操作的更新率.增加以提高FPS,但可能导致反应延迟.如果选中了“自动延迟”,将被忽略. 默认值：0.1", --createSpinner"
     ["Check this to display developer debug messages."] = "显示debug信息", --createSpinner"
-    ["Sets Autloot on/off."] = "1Sets Autloot on/off.", --createSpinner"
+    ["Sets Autloot on/off."] = "自动拾取.", --createSpinner"
     ["Will alert you at the set interval when Unlocker is not attached."] = "如果解锁失败就一直提醒", --createSpinner"
     ["Define a key which pauses the rotation."] = "定义暂停循环的快捷键", --createSpinner"
     ["Check if you want to use Wise Targetting, if unchecked there will be no priorisation from hp/range."] = "Check if you want to use Wise Targetting, if unchecked there will be no priorisation from hp/range.", --createSpinner"
     ["**Requires Safe Damage Check** - Set to desired limit, will still dps targets but not kill until below limit."] = "**Requires Safe Damage Check** - Set to desired limit, will still dps targets but not kill until below limit.", --createSpinner"
-    ["Interrupt target settings."] = "Interrupt target settings.", --createSpinner"
-    ["Mark to interrupt if Marked is selected in Interrupt Target."] = "Mark to interrupt if Marked is selected in Interrupt Target.", --createSpinner"
+    ["Interrupt target settings."] = "打断目标设置.", --createSpinner"
+    ["Mark to interrupt if Marked is selected in Interrupt Target."] = "如果在打断目标设置选择了标记,则只打断标记.", --createSpinner"
     ["Health Percent to Cast At"] = "Health Percent to Cast At", --createSpinner"
     ["Mana Percent to Drink At"] = "Mana Percent to Drink At", --createSpinner"
-    ["Health Percentage to use at."] = "Health Percentage to use at.", --createSpinner"
+    ["Health Percentage to use at."] = "|cffffffff多少百分百血量使用.", --createSpinner"
     ["Target for LoH"] = "Target for LoH", --createSpinner"
     ["Target for BoP"] = "Target for BoP", --createSpinner"
     ["Target for BoS"] = "Target for BoS", --createSpinner"
@@ -28,6 +28,14 @@ local locales = {
     ["Target for LoM after FoL"] = "Target for LoM after FoL", --createSpinner"
     ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."] = "Check this to allow dynamic targetting. If unchecked, profile will only attack current target.", --createSpinner"
     ["If checked, it will add incoming health from other healers to hp. Check this if you want to prevent overhealing units."] = "如果使用它.它会将来自其他治疗者(包括自己)的预计治疗量添加到hp中,以防止过量治疗(建议读条治疗职业开启)",
+    ["Display Rotation Log."] = "显示运行日志界面",
+    ["Dispaly Failcasts in Debug."] = "在运行日志显示施法失败",
+    ["Automatically sells grays and repairs when you open a repair vendor."] = "当你打开一个修理供应商会自动修理和售卖灰色物品",
+    ["Automatically accept LFD, LFR, .. queue."] = "自动接受 副本,战场 ...队列",
+    ["Check to enable chat overlay messages."] = "启用聊天覆盖消息",
+    ["|cffFF0000 WARNING!|cffFFFFFF Checking this will reset setting on reload!"] = "|cffFF0000 警告!|cffFFFFFF 启用这个会在重载插件后配置全部重置!",
+    ["|cffFF0000 WARNING!|cffFFFFFF Checking this will reset saved profiles on reload!"] = "|cffFF0000 警告!|cffFFFFFF 启用这个会在重载插件后保存的配置全部重置!",
+    ["EWT only. This uses the Git master head sha for comparison. |cffFF0000Experimental!"] = "启用会与Git master head sha进行对比(只有EWT可以使用). |cffFF0000实验阶段!",
 
     --下拉框的部分
     ["All"] = "全部", --, LoM after FoL Target
@@ -213,8 +221,8 @@ local locales = {
     ["Auto Delay"] = "自动延迟",
     ["Bot Update Rate"] = "循环执行效率",
     ["Start/Stop BadRotations"] = "开始/停止BR",
-    ["Rotation Log"] = "运行日志",
-    ["Display Failcasts"] = "显示失败",
+    ["Rotation Log"] = "运行日志界面",
+    ["Display Failcasts"] = "显示施法失败",
     ["Queue Casting"] = "技能自动排队",
     ["Auto Loot"] = "自动拾取",
     ["Auto-Sell/Repair"] = "自动售卖/修理",
