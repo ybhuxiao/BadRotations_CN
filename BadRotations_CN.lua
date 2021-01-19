@@ -1,8 +1,8 @@
 --/print isChecked("Blessing of Freedom")
 local locales = {
-    
+
     --todo，大家没事可以补充补充
-    
+
     --tooltip部分
     ["Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1"] = "Set to desired time to start Pre-Pull (DBM Required). Min: 1 / Max: 10 / Interval: 1", --createSpinner
     ["Check to enable Professions Helper."] = "Check to enable Professions Helper.", --createSpinner "专业助手Profession Helper"
@@ -28,7 +28,7 @@ local locales = {
     ["Target for LoM after FoL"] = "Target for LoM after FoL", --createSpinner"
     ["Check this to allow dynamic targetting. If unchecked, profile will only attack current target."] = "Check this to allow dynamic targetting. If unchecked, profile will only attack current target.", --createSpinner"
     ["If checked, it will add incoming health from other healers to hp. Check this if you want to prevent overhealing units."] = "如果使用它.它会将来自其他治疗者(包括自己)的预计治疗量添加到hp中,以防止过量治疗(建议读条治疗职业开启)",
-	
+
     --下拉框的部分
     ["All"] = "全部", --, LoM after FoL Target
     ["Tanks"] = "坦克", --, LoM after FoL Target
@@ -83,6 +83,7 @@ local locales = {
     ["abs Lowest"] = "数值最低", --dropdown val: 智能目标, Wise Target
     ["Nearest"] = "最近的", --dropdown val: 智能目标, Wise Target
     ["Furthest"] = "最远的", --dropdown val: 智能目标, Wise Target
+	["Only on Target Death"] = "仅目标死亡时",
     ["Focus"] = "焦点", --dropdown val: 打断目标, Interrupt Target
     ["Marked"] = "标记", --dropdown val: 打断目标, Interrupt Target
     ["|cffffff00Star"] = "|cffffff00星星", --dropdown val: 打断标记, Interrupt Mark
@@ -105,6 +106,7 @@ local locales = {
     ["|cffFFFFFFMouseover"] = "鼠标指向",
     ["|cffFFFFFFTank"] = "坦克",
     ["|cffFFFFFFHealer"] = "治疗",
+	["|cffFFFFFFOther tanks"] = "其他坦克",
     ["|cffFFFFFFHealer/Tank"] = "治疗/坦克",
     ["|cffFFFFFFHealer/Damage"] = "治疗/输出",
     ["|cff00FF00Target"] = "目标",
@@ -151,9 +153,9 @@ local locales = {
 	["Oralius' Whispering Crystal"] = "奥拉留斯的低语水晶",
 	["Repurposed Fel Focuser"] = "改装的邪能焦镜",
     -- [] = "任何人",
-    
-    
-    
+
+
+
     --createPagesDropdown部分
     ["Base Options"] = "基础功能",
     ["Rotation Options"] = "循环配置",
@@ -161,8 +163,8 @@ local locales = {
     ["Queue Engine"] = "队列引擎",
     ["Tracker Engine"] = "追踪引擎",
     ["Addon Debug Messages"] = "插件调试消息",
-    
-    
+
+
     --createSection下拉模块
     ["Utility"] = "功能",
     ["Single Target Healing"] = "单体治疗",
@@ -176,14 +178,16 @@ local locales = {
     ["General"] = "常规",
     ["Healing Engine"] = "治疗引擎",
     ["Other Features"] = "其他功能",
+	["Dungeon Helpers"] = "副本助手",
     ["Save/Load Settings"] = "保存/加载设置",
     ["Smart Queue"] = "智能队列",
-    
+
     --config: enemies engine
     ["Dynamic Targetting"] = "动态定位",
     ["Target Dynamic Target"] = "自动切换目标",
     ["Hostiles Only"] = "只有敌人",
     ["Wise Target"] = "智能目标",
+	["Wise Target Frequency"] = "智能目标频率",
     ["Forced Burn"] = "强制攻击",
     ["Avoid Shields"] = "避免无效单位",
     ["Tank Threat"] = "坦克仇恨",
@@ -204,7 +208,7 @@ local locales = {
     ["Purge Only Whitelist"] = "只净化白名单",
     ["Interrupt Target"] = "打断目标",
     ["Interrupt Mark"] = "打断标记",
-    
+
     --config: general
     ["Auto Delay"] = "自动延迟",
     ["Bot Update Rate"] = "循环执行效率",
@@ -222,7 +226,7 @@ local locales = {
     ["Reset Saved Profiles"] = "重置保存的配置",
     ["Target Validation Debug"] = "目标验证调试",
     ["Auto Check for Updates"] = "自动检查更新",
-    
+
     --config: healing engine
     ["HE Active"] = "治疗引擎开启",
     ["Heal Pets"] = "治疗宠物",
@@ -237,8 +241,9 @@ local locales = {
     ["Overhealing Cancel"] = "取消过量治疗",
     ["Dispel delay"] = "延迟驱散",
     ["Healer Line of Sight Indicator"] = "治疗视线指示",
-    
+
     --config: other features
+	["Bypass Vehicle Check"] = "绕过脚本坐骑检测",
     ["Profession Helper"] = "专业助手",
     ["Prospect Ores"] = "炸矿",
     ["Mill Herbs"] = "研磨草药",
@@ -253,16 +258,27 @@ local locales = {
     ["Debug Timers"] = "调试计时器",
     ["Cache Debuffs"] = "缓存Debuffs",
     ["Unit ID In Tooltip"] = "工具提示中的单位ID",
-    
+	["Catcher/Snatcher Delay"] = "抓猪/拆炸弹 延迟",
+	["Freehold - Pig Catcher"] = "自由镇 - 抓猪",
+    ["De Other Side - Bomb Snatcher"] = "彼界 - 拆炸弹",
+
     --config: save/loading settings
     ["Load Prior Saved Settings"] = "加载设置",
+	["Load Saved Profiles"] = "加载保存的配置文件",
     ["Create New Settings Profiles or Load Existing"] = "创建新配置或加载现有配置",
     ["Export/Import from Settings Folder"] = "从设置文件夹中导出/导入",
     ["FileName: "] = "文件名: ",
     ["Load"] = "加载",
     ["Export"] = "导出",
     ["Import"] = "导入",
-    
+    ["Select Settings"] = "选择设置",
+	["FileName: "] = "文件名: ",
+	["Solo"] = "单人",
+	["Dungeon"] = "副本",
+	["M+ Dungeon"] = "M+ 副本",
+	["Raid"] = "团本",
+	["|cffDB4437Save your settings before loading a new one!!"] = "|cffDB4437在加载新设置之前保存您的设置!!",
+
     --config:TrackerEngine
     ["Main Settings"] = "主要设置",
     ["Enable Tracker"] = "启用追踪器",
@@ -277,7 +293,7 @@ local locales = {
     ["Mailbox Tracker"] = "信箱追踪器",
     ["Odd Crystal Tracker"] = "怪异水晶追踪器",
     ["Potions Tracker"] = "药水追踪器",
-    
+
     --Healing Options 治疗选项
     ["Ignore Range Check"] = "忽略距离检查", --createText
     ["Ignore Stack Count"] = "忽略层数计数", --createText
@@ -288,8 +304,8 @@ local locales = {
     ["Arcane Burst"] = "奥术震爆", --createText
     ["Necrotic Rot"] = "死疽溃烂",
     ["Decaying Strike Timer"] = "腐烂打击 计时", --createText
-    
-    
+
+
     --br：base options
     ["Cast Debug"] = "施法调试",
     ["Ignore Combat"] = "自动开怪",
@@ -306,7 +322,7 @@ local locales = {
     ["Healer Mode"] = "快捷键：治疗模式",
 	["Legendary Support"] = "支持传说物品",
 	["Ignore Combat Checks"] = "自动开怪",
-    
+
     --圣骑士：防护
     ["Blessing of Freedom"] = "自由祝福",
     ["Taunt"] = "自动嘲讽",
@@ -359,6 +375,7 @@ local locales = {
     ["Word of Glory"] = "荣耀圣令",
     ["Free Word of Glory"] = "免费荣耀圣令",
     ["Word of Glory - Party"] = "荣耀圣令 - 队友",
+	["WoG - Party Target"] = "荣耀圣令 - 队友 目标",
     ["Divine Toll"] = "圣洁鸣钟",
     ["Hammer of Wrath"] = "愤怒之锤",
     ["Stuns Black Units"] = "不能被眩晕的单位",
@@ -435,8 +452,8 @@ local locales = {
     ["Mode"] = "模式",
     ["Non Moving Martyr"] = "Non Moving Martyr",
     ["Tyr's Deliverance"] = "提尔的拯救",
-    
-    
+
+
     --圣骑士：惩戒
     ["APL Mode"] = "APL模式",
     ["DPS Testing"] = "DPS测试",
@@ -461,7 +478,7 @@ local locales = {
     ["Hammer of Justice - Legendary"] = "Hammer of Justice - Legendary",
     ["Justicar's Vengeance"] = "Justicar's Vengeance",
     ["Rebuke"] = "责难",
-    
+
     --恶魔猎手：浩劫
     ["Eye Beam Usage"] = "眼棱",
     ["Units To AoE"] = "AoE目标",
@@ -478,7 +495,7 @@ local locales = {
     ["Chaos Nova - AoE"] = "混乱新星 - AoE",
     ["Chaos Nova"] = "混乱新星",
     ["Disrupt"] = "打断",
-    
+
     --恶魔猎手：复仇
     ["Immolation Aura"] = "献祭光环",
     ["Sigil of Flame"] = "沉默咒符",
@@ -507,8 +524,8 @@ local locales = {
     ["Kil'jaeden's Burning Wish"] = "",
     ["Empower Wards"] = "强化结界",
     ["Sigil of Chains"] = "锁链符咒",
-    
-    
+
+
     --牧师：戒律
     ["Light's Wrath"] = "圣光之怒",
     ["Light's Wrath Targets"] = "圣光之怒 目标",
@@ -597,7 +614,7 @@ local locales = {
     ["Atonement for Evangelism"] = "福音救赎buf数量",
     ["Quaking Palm"] = "熊猫人种族天赋",
     ["Purify"] = "纯净术",
-    
+
     --牧师：神圣
     ["Automatic Mass Dispel"] = "自动群驱",
     ["Mass Dispel Hotkey"] = "群驱快捷键",
@@ -660,8 +677,8 @@ local locales = {
     ["Renew while moving"] = "移动中 恢复",
     ["Renew while moving"] = "移动中 恢复",
     ["Renew while moving"] = "移动中 恢复",
-    
-    
+
+
     --牧师：暗影
     ["PWS: Body and Soul"] = "身心合一",
     ["Mouseover Dotting"] = "鼠标指向dot",
@@ -683,8 +700,8 @@ local locales = {
     ["Silence"] = "沉默",
     ["Psychic Scream / Mind Bomb - Int"] = "心灵尖啸 打断",
     ["Void Form Mode"] = "虚空形态模式",
-    
-    
+
+
     --死亡骑士：鲜血
     ["Dark Command"] = "黑暗命令",
     ["Dancing Rune Weapon"] = "符文刃舞",
@@ -706,7 +723,7 @@ local locales = {
     ["Death Grip - Int"] = "死亡之握 - 打断",
     ["Mind Freeze"] = "心灵冰冻",
     ["Interrupts"] = "打断",
-    
+
     --死亡骑士：冰霜
     ["Death Grip"] = "死亡之握",
     ["Glacial Advance"] = "冰霜突进",
@@ -724,7 +741,7 @@ local locales = {
     ["Blinding Sleet"] = "致盲冰雨",
     ["Death Strike"] = "灵界打击",
     ["Cleave Mode"] = "",
-    
+
     --死亡骑士：邪恶
     ["SpellQueue Clear"] = "",
     ["Auto Target"] = "自动目标",
@@ -745,7 +762,7 @@ local locales = {
     ["AMS Counter"] = "",
     ["Necro Spam"] = "",
     ["Eye of Leotheras"] = "",
-    
+
     --盗贼：奇袭/刺杀
     ["Stealth Breaker"] = "",
     ["Fan of Knives"] = "刀扇",
@@ -768,7 +785,7 @@ local locales = {
     ["Pick Pocket Mode"] = "搜索模式",
     ["Max rupture count"] = "最大割裂目标数量",
     ["#enemies to switch fok/muti"] = "",
-    
+
     --盗贼：狂徒
     ["Bribe"] = "贿赂（已经没了）",
     ["Grappling Hook"] = "抓钩",
@@ -791,7 +808,7 @@ local locales = {
     ["Cloak Killing Spree"] = "",
     ["BladeFlurry Mode"] = "剑刃乱舞模式",
     ["MFD Mode"] = "死亡标记模式",
-    
+
     --盗贼：敏锐
     ["SS Range"] = "",
     ["Shuriken Toss OOR"] = "飞镖投掷 - 超出近战范围",
@@ -801,7 +818,7 @@ local locales = {
     ["Symbols of Death"] = "死亡符记",
     ["Nightblade Multidot"] = "多目标夜刃",
     ["PickPocket Mode"] = "搜索模式",
-    
+
     --武僧：踏风
     ["CJL OOR"] = "碎玉闪电 - 超出范围",
     ["CJL OOR Cancel"] = "碎玉闪电 - 超出范围(打断)",
@@ -833,7 +850,7 @@ local locales = {
     ["Leg Sweep"] = "扫堂腿",
     ["SEF Mode"] = "",
     ["FSK Mode"] = "翔龙在天 Mode",
-    
+
     --武僧：酒仙
     ["BoC Rotation"] = "",
     ["Purifying Brew"] = "活血酒",
@@ -849,8 +866,8 @@ local locales = {
     ["Expel Harm"] = "移花接木",
     ["Expel Harm Orbs"] = "移花接木 球体",
     ["Quaking Palm"] = "震山掌",
-    
-    
+
+
     --武僧：织雾
     ["Boss Helper"] = "Boss助手",
     ["Mana Tea"] = "法力茶",
@@ -865,7 +882,7 @@ local locales = {
     ["Revival Targets"] = "还魂术 目标",
     ["Chi Ji"] = "朱鹤赤精",
     ["Chi Ji Targets"] = "朱鹤赤精 目标",
-    
+
     --战士：武器
     ["AoE Threshold"] = "",
     ["Battle Shout"] = "",
@@ -891,13 +908,13 @@ local locales = {
     ["Victory Rush"] = "乘胜追击",
     ["Pummel"] = "拳击",
     ["Heroic Mode"] = "",
-    
+
     --战士：狂怒
     ["Piercing Howl"] = "刺耳怒吼",
     ["Dragon Roar"] = "巨龙怒吼",
     ["Recklessness"] = "",
     ["Enraged Regeneration"] = "狂怒回复",
-    
+
     --战士：防护
     ["Artifact HP"] = "神器 血量",
     ["High Rage Revenge"] = "",
@@ -912,7 +929,7 @@ local locales = {
     ["Last Stand"] = "破釜沉舟",
     ["Shield Wall"] = "盾墙",
     ["Spell Reflection"] = "法术反射",
-    
+
     --猎人：野兽控制
     ["Mend Pet"] = "治疗宠物",
     ["Bestial Wrath"] = "狂野怒火",
@@ -957,7 +974,7 @@ local locales = {
     ["Tar Trap"] = "焦油陷阱",
     ["Feign Thing"] = "假死",
     ["Tranquilizing Shot"] = "宁神射击",
-    
+
     --猎人：宠物
     ["Master's Call - Cunning"] = "主人的召唤-狡诈",
     ["Primal Rage - Ferocity"] = "原始暴怒-狂野",
@@ -968,7 +985,7 @@ local locales = {
     ["Use Heal Ability"] = "使用治疗能力",
     ["Use Purge Ability"] = "使用净化能力",
     ["Use Utility Ability"] = "使用实用能力",
-    
+
     --猎人：射击
     ["Piercing Shot Units"] = "穿刺射击 单位",
     ["Trueshot"] = "野性守护",
@@ -980,7 +997,7 @@ local locales = {
     ["Explosive Shot"] = "爆炸射击",
     ["Piercing Shot"] = "穿刺射击",
     ["Rapid Fire"] = "急速射击",
-    
+
     --猎人：生存
     ["Auto Attack/Passive"] = "自动攻击/被动",
     ["Auto Growl"] = "自动低吼",
@@ -993,8 +1010,8 @@ local locales = {
     ["Muzzle"] = "压制",
     ["Trap Mode"] = "陷阱 模式",
     ["Artifact Mode"] = "神器模式",
-    
-    
+
+
     --萨满：元素
     ["Ghost Wolf"] = "幽魂之狼",
     ["Spirit Walk"] = "幽魂步",
@@ -1018,7 +1035,7 @@ local locales = {
     ["Lightning Surge Totem"] = "闪电奔涌图腾",
     ["Thunderstorm - Interrupt"] = "雷霆风暴 打断",
     ["Earthquake - Interrupt"] = "震地图腾 打断",
-    
+
     --萨满：增强
     ["Feral Lunge"] = "狂野扑击",
     ["Lightning Bolt Out of Combat"] = "闪电箭 脱离战斗",
@@ -1048,7 +1065,7 @@ local locales = {
 	["Capacitor Totem - HP"] = "电能图腾-血量",
 	["Capacitor Totem - AoE"] = "电能图腾-AOE怪数",
 	["Capacitor Totem"] = "电能图腾",
-    
+
     --萨满：恢复
     ["Cloudburst Totem"] = "暴雨图腾",
     ["Cloudburst Totem Targets"] = "暴雨图腾 目标",
@@ -1076,18 +1093,18 @@ local locales = {
     ["Gift of the Queen Targets"] = "女王的恩赐 目标",
     ["Wellspring"] = "奔涌之流",
     ["Wellspring Targets"] = "奔涌之流 目标",
-    
-    
+
+
     --法师：奥术
     ["Arcane Charges During Conserve"] = "",
     ["Arcane Explosion"] = "魔爆术",
     ["Burn Phase Debug"] = "爆发阶段调试",
     ["Arcane Power"] = "奥术强化",
     ["Rune of Power"] = "能量符文",
-    
+
     --法师：火焰
     ["Blazing Barrier"] = "烈焰护体",
-    
+
     --法师：冰霜
     ["Mirror Image"] = "镜像",
     ["Frost Nova"] = "冰霜新星",
@@ -1107,8 +1124,8 @@ local locales = {
     ["Ice Barrier"] = "寒冰护体",
     ["Ice Block"] = "寒冰屏障",
     ["Cold Snap"] = "急速冷却",
-    
-    
+
+
     --术士：痛苦
     ["Pet Management"] = "宠物管理",
     ["Summon Pet"] = "召唤宠物",
@@ -1129,21 +1146,21 @@ local locales = {
     ["Health Funnel"] = "生命通道",
     ["Unending Resolve"] = "不灭决心",
     ["MultiDot Mode"] = "多目标dot模式",
-    
+
     --术士：恶魔
     ["Demonwrath"] = "恶魔之怒",
     ["Felstorm"] = "邪能风暴",
     ["Doom Boss HP Limit"] = "",
     ["Drain Life"] = "吸取生命",
-    
+
     --术士：毁灭
     ["Immolate Boss HP Limit"] = "",
     ["Cataclysm"] = "大灾变",
     ["Rain of Fire"] = "火焰之雨",
     ["Life Tap"] = "生命分流",
     ["Chaos Bolt at Shards"] = "混乱之箭 碎片",
-    
-    
+
+
     --德鲁伊：平衡
     ["Deadly Chicken"] = "致命的咕咕",
     -- ["Memekin Rotation"]="",
@@ -1217,8 +1234,8 @@ local locales = {
     ["Group treants with CD"] = "组队卡CD使用树人",
     ["Off-healing"] = "关闭愈合",
     --  [""]="",
-    
-    
+
+
     --德鲁伊：野性
     ["Death Cat Mode"] = "幽灵豹模式",
     ["Perma Fire Cat"] = "使用火猫",
@@ -1253,7 +1270,7 @@ local locales = {
     ["Cleave Mode"] = "顺劈模式",
     ["Wild Charge"] = "野性冲锋",
 	["Covenant Ability"] = "盟约技能",
-    
+
     --德鲁伊：守护
     ["Growl"] = "低吼",
     ["Maul At"] = "自动重殴",
@@ -1286,7 +1303,7 @@ local locales = {
 	["Big Hit Oh Shit!"] = "群攻模式",
 	["Use Covenant"] = "使用格里恩之铃",
 	["Incarnation/Berserk"] = "化生/狂暴",
-    
+
     --德鲁伊：恢复
     ["DBM cast Rejuvenation"] = "DBM预铺 回春术",
     ["DOT cast Rejuvenation"] = "DOT预铺 回春术",
@@ -1433,9 +1450,9 @@ C_Timer.NewTicker(.5, function()
         --  debugging=true
         --  print("brcn is debugging")
         --end
-        
+
         --print("br 汉化开始")
-        
+
         --修改多选框
         --local original_createCheckbox = br.ui.createCheckbox
         --function br.ui.createCheckbox(self, parent, text, tooltip, checked)
@@ -1454,12 +1471,12 @@ C_Timer.NewTicker(.5, function()
         --  end
         --  return original_createCheckbox(self, parent, color..text, tooltip, checked)
         --end
-        
+
         --获取tooltip的中文
         local function getToolTipCN(tooltip)
             local newTooltip = ""
             if tooltip == nil or #tooltip == 0 then
-            
+
             else
                 local tooltipIgnoreColor
                 if startswith(tooltip, "|c") and #tooltip > 10 then
@@ -1476,20 +1493,20 @@ C_Timer.NewTicker(.5, function()
             end
             return newTooltip
         end
-        
+
         --hook createText方法
         local original_createText = br.ui.createText
         function br.ui.createText(self, parent, text, isCheckbox)
             if type(text) ~= "string" or #text == 0 then
                 original_createText(parent, text, true);
             end
-            
+
             local color = ""
             if startswith(text, "|c") and #text > 10 then
                 color = string.sub(text, 1, 10)
                 text = string.sub(text, 11, #text)
             end
-            
+
             if text and locales[text] and locales[text] ~= "" then
                 text = color .. locales[text]
             elseif debugging and locales[text] == nil then
@@ -1497,7 +1514,7 @@ C_Timer.NewTicker(.5, function()
             end
             return original_createText(self, parent, color .. text, true)
         end
-        
+
         local original_createSection = br.ui.createSection
         function br.ui.createSection(self, parent, sectionName, tooltip)
             if sectionName and locales[sectionName] and locales[sectionName] ~= "" then
@@ -1509,7 +1526,7 @@ C_Timer.NewTicker(.5, function()
             local tooltip = getToolTipCN(tooltip)
             return original_createSection(self, parent, sectionName, tooltip)
         end
-        
+
         local original_createPagesDropdown = br.ui.createPagesDropdown
         function br.ui.createPagesDropdown(self, window, menuPages)
             --print(#window,#menuPages)
@@ -1527,7 +1544,7 @@ C_Timer.NewTicker(.5, function()
                     --    end
                     --  end
                     --end
-                    
+
                     if pageName and locales[pageName] and locales[pageName] ~= "" then
                         pageName = locales[pageName]
                     elseif debugging and locales[pageName] == nil then
@@ -1539,7 +1556,7 @@ C_Timer.NewTicker(.5, function()
             end
             return original_createPagesDropdown(self, window, menuPages)
         end
-        
+
         --dropdown部分
         local original_createDropdown = br.ui.createDropdown
         function br.ui.createDropdown(self, parent, text, itemlist, default, tooltip, tooltipDrop, hideCheckbox)
@@ -1554,12 +1571,12 @@ C_Timer.NewTicker(.5, function()
                 end
                 tinsert(newItemlist, optionName)
             end
-            
+
             local tooltip = getToolTipCN(tooltip)
             return original_createDropdown(self, parent, text, newItemlist, default, tooltip, tooltipDrop,
                                            hideCheckbox)
         end
-        
+
         --createSpinner的tooltip
         local original_createSpinner = br.ui.createSpinner
         function br.ui.createSpinner(self, parent, text, number, min, max, step, tooltip, tooltipSpin, hideCheckbox)
@@ -1567,7 +1584,7 @@ C_Timer.NewTicker(.5, function()
             return original_createSpinner(self, parent, text, number, min, max, step, tooltip, tooltipSpin,
                                           hideCheckbox)
         end
-        
+
         C_Timer.After(2, function()
             BadRotationsButton:SetScript("OnEnter", function(self)
                 GameTooltip:SetOwner(Minimap, "ANCHOR_CURSOR", 50, 50)
@@ -1585,8 +1602,8 @@ C_Timer.NewTicker(.5, function()
                 GameTooltip:Hide()
             end)
         end)
-        
-        
+
+
         --local original_isChecked = isChecked
         --function isChecked(Value)
         --  if type(Value)~="string" or #Value==0 then return false; end
@@ -1602,11 +1619,11 @@ C_Timer.NewTicker(.5, function()
         --    return original_isChecked(Value)
         --  end
         --end
-        
+
         --修改按钮文字
-        
+
         --修改下拉框
-        
+
         --支持中文字体
         DiesalFontNormal:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 10)
         DiesalFontPixel:SetFont("Interface\\AddOns\\BadRotations_CN\\fonts\\ARKai_T.ttf", 6)
