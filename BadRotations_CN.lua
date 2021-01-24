@@ -224,6 +224,7 @@ local locales = {
 ["Purge Only Whitelist"] = "只净化白名单",
 ["Interrupt Target"] = "打断目标",
 ["Interrupt Mark"] = "打断标记",
+["Boss Detection Only In Instance"] = "仅在副本中使用检测BOSS函数",
 
 --config: general
 ["Auto Delay"] = "自动延迟",
@@ -484,6 +485,7 @@ local locales = {
 ["Divine Toll during DPS Key"] = "最大化DPS快捷键格里恩之铃单位",
 ["Judgment - DPS"] = "审判 - DPS",
 ["High Prio Crusader Strike"] = "十字军之力",
+["Hard Lock Crit Heal"] = "注重治疗",
 
 --圣骑士：惩戒
 ["APL Mode"] = "APL模式",
