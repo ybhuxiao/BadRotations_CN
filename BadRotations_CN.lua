@@ -1327,15 +1327,16 @@ local locales = {
 ["Auto Stealth in Cat Form"] = "猎豹形态自动隐形",
 ["Auto Dash in Cat Form"] = "猎豹形态自动疾跑",
 ["Ironfur (No Aggro)"] = "铁鬃(无仇恨)",
-["Spam Mangle during Incarnation"] = "化生时群体缠绕",
-["Spam Thrash during Incarnation"] = "化生时群体痛击",
+["Spam Mangle during Incarnation"] = "化身时群体缠绕",
+["Spam Thrash during Incarnation"] = "化身时群体痛击",
 ["OOC Swiftmend"] = "脱战迅捷治愈",
 ["OOC Rejuvenation"] = "脱战回春",
 ["Friendly Targets"] = "友方目标",
-["Incapacitating Roar Logic (M+)"] = "暗影过度大秘境夺魂咆哮",
+["Incapacitating Roar Logic (M+)"] = "暗影国度大秘境夺魂咆哮",
 ["Big Hit Oh Shit!"] = "群攻模式",
-["Use Covenant"] = "使用格里恩之铃",
-["Incarnation/Berserk"] = "化生/狂暴",
+["Use Covenant"] = "使用盟约技能",
+["Incarnation/Berserk"] = "化身/狂暴",
+["Rage Dump Amount"] = "能量赤字",
 
 --德鲁伊：恢复
 ["DBM cast Rejuvenation"] = "DBM预铺 回春术",
@@ -1415,7 +1416,8 @@ local locales = {
 ["DARK TITAN"] = "黑暗泰坦的回忆",
 ["Natures Swiftness"] = "自然迅捷",
 ["Mist - Spirit vulpin"] = "迷雾-幻影仙狐",
-["Plague - Globgrod"] = " 凋魂-粘稠的大杂烩",
+["Plague - Globgrod"] = "凋魂-粘稠的大杂烩",
+["Escape and rejuvenate"]="战斗逃离消耗回春使用迅捷",
 }
 
 --添加子配置
@@ -1509,7 +1511,7 @@ C_Timer.NewTicker(.5, function()
 		local function getToolTipCN(tooltip)
 			local newTooltip = ""
 			if tooltip == nil or #tooltip == 0 then
-				
+			
 			else
 				local tooltipIgnoreColor
 				if startswith(tooltip, "|c") and #tooltip > 10 then
