@@ -1021,7 +1021,7 @@ local locales = {
 
 --猎人：射击
 ["Piercing Shot Units"] = "穿刺射击 单位",
-["Trueshot"] = "野性守护",
+["Trueshot"] = "白发白中",
 ["Explosive Shot Mode"] = "爆炸射击 模式",
 ["Piercing Shot Mode"] = "穿刺射击 模式",
 ["Bursting Shot"] = "爆裂射击",
@@ -1030,6 +1030,11 @@ local locales = {
 ["Explosive Shot"] = "爆炸射击",
 ["Piercing Shot"] = "穿刺射击",
 ["Rapid Fire"] = "急速射击",
+["Volley Units"] = "乱射数量",
+["Hunter's Mark"] = "猎人印记",
+["Feign Death"] = "假死",
+["Do Not Auto Engage if OOC"] = "脱战之后不引怪",
+["Cooldown harmonizing with Trueshot"] = "百发百中冷却协调",
 
 --猎人：生存
 ["Auto Attack/Passive"] = "自动攻击/被动",
@@ -1038,7 +1043,6 @@ local locales = {
 ["Aspect of the Eagle"] = "雄鹰守护",
 ["Coordinated Assault"] = "",
 ["Light's Judgment"] = "",
-["Feign Death"] = "",
 ["Freezing Trap"] = "冰冻陷阱",
 ["Muzzle"] = "压制",
 ["Trap Mode"] = "陷阱 模式",
