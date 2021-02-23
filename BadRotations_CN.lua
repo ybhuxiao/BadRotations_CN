@@ -489,6 +489,7 @@ local locales = {
 ["Judgment - DPS"] = "审判 - DPS",
 ["High Prio Crusader Strike"] = "十字军之力",
 ["Hard Lock Crit Heal"] = "注重治疗",
+["Absolution"] = "宽恕",
 
 --圣骑士：惩戒
 ["APL Mode"] = "APL模式",
