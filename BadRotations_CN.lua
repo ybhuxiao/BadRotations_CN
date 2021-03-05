@@ -1141,6 +1141,14 @@ local locales = {
 
 --法师：火焰
 ["Blazing Barrier"] = "烈焰护体",
+["Swaps between Single and Multiple based on number of targets in range."] = "根据范围内的目标数量在单个和多个之间切换.",
+["Arcane Intellect"] = "奥术智慧",
+["Meteor Targets"] = "流星目标数",
+["Max AoE Units to use Meteor on."] = "流星使用的最大敌人数量.",
+["Flamestrike Targets"] = "烈焰风暴的目标数量",
+["Unit Count Limit before casting Flamestrike."] = "施放烈焰打击前的单位数限制",
+["Blast Wave"] = "冲击波",
+["Spellsteal"] = "法术吸取",
 
 --法师：冰霜
 ["Mirror Image"] = "镜像",
