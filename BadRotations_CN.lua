@@ -392,6 +392,7 @@ local locales = {
 ["Trinkets 2 Mode"] = "饰品2 模式",
 ["Holy Avenger with Wings"] = "复仇之怒+神圣复仇者一起用",
 ["Arcane Torrent Dispel"] = "奥术洪流驱散",
+["Arcane Torrent HolyPower"] = "奥术洪流圣力",
 ["Word of Glory"] = "荣耀圣令",
 ["Free Word of Glory"] = "免费荣耀圣令",
 ["Word of Glory - Party"] = "荣耀圣令 - 队友",
