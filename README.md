@@ -15,6 +15,9 @@ QQ群：597022336
 3. 运行的时候把“BadRotations”和“BadRotations汉化”两个插件都启用即可。
 4. 如果想暂时使用英文版，就在插件选择界面把“BadRotations汉化”取消勾选；如果不想再使用，就直接删除本插件即可。
 
+2021年大概3月之后，br做了一些改动，无法在完全不动br的情况下汉化。需要改动br的一行代码，如下图所示：
+![](https://github.com/ybhuxiao/BadRotations_CN/blob/master/media/%E6%96%B0%E7%89%88br%E6%80%8E%E4%B9%88%E7%94%A8brcn%E6%8F%92%E4%BB%B6.png)
+
 
 ## 2.关注/赞赏：
 
