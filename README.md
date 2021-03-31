@@ -6,7 +6,7 @@ QQ群：578928506（br）、718963346（魔兽插件开发），请按需添加
 
 ![插件选择](http://wowdata.top/static/img/br/eg.png)
 
-## 1.使用说明
+## 1.使用说明（必须看看，否则你很可能用不了）
 
 1. 这是一个基于[BadRotations](https://github.com/CuteOne/BadRotations)开发的wow插件，他可以把BadRotations的界面翻译成中文
 (This is a wow addon developed based on [BadRotations](https://github.com/CuteOne/BadRotations). It can translate the UI of BR into Chinese.)
@@ -15,7 +15,7 @@ QQ群：578928506（br）、718963346（魔兽插件开发），请按需添加
 3. 运行的时候把“BadRotations”和“BadRotations汉化”两个插件都启用即可。
 4. 如果想暂时使用英文版，就在插件选择界面把“BadRotations汉化”取消勾选；如果不想再使用，就直接删除本插件即可。
 
-2021年大概3月之后，br做了一些改动，无法在完全不动br的情况下汉化。需要改动br的一行代码，如下图所示：
+2021年3月，br做了一些作用域方面的改动，导致现在无法在完全不动br的情况下汉化。需要改动br的一行代码，如下图所示：
 ![](https://github.com/ybhuxiao/BadRotations_CN/blob/master/media/%E6%96%B0%E7%89%88br%E6%80%8E%E4%B9%88%E7%94%A8brcn%E6%8F%92%E4%BB%B6.png)
 
 
