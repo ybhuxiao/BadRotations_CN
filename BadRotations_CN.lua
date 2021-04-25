@@ -228,6 +228,7 @@ local locales = {
 ["Interrupt Target"] = "打断目标",
 ["Interrupt Mark"] = "打断标记",
 ["Boss Detection Only In Instance"] = "仅在副本中使用检测BOSS函数",
+["Include Range"] = "包含范围",
 
 --config: general
 ["Auto Delay"] = "自动延迟",
@@ -246,6 +247,7 @@ local locales = {
 ["Reset Saved Profiles"] = "重置保存的配置",
 ["Target Validation Debug"] = "目标验证调试",
 ["Auto Check for Updates"] = "自动检查更新",
+["Dev Mode"] = "开发者模式",
 
 --config: healing engine
 ["HE Active"] = "治疗引擎开启",
@@ -261,6 +263,7 @@ local locales = {
 ["Overhealing Cancel"] = "取消过量治疗",
 ["Dispel delay"] = "延迟驱散",
 ["Healer Line of Sight Indicator"] = "治疗视线指示",
+["Healing Debug"] = "调试治疗",
 
 --config: other features
 ["Bypass Vehicle Check"] = "绕过脚本坐骑检测",
@@ -281,6 +284,7 @@ local locales = {
 ["Catcher/Snatcher Delay"] = "抓猪/拆炸弹 延迟",
 ["Freehold - Pig Catcher"] = "自由镇 - 抓猪",
 ["De Other Side - Bomb Snatcher"] = "彼界 - 拆炸弹",
+["Show Drawings"] = "显示画线",
 
 --config: save/loading settings
 ["Load Prior Saved Settings"] = "加载设置",
@@ -408,6 +412,7 @@ local locales = {
 ["OOC FoL"] = "非战斗圣光闪现",
 ["OOC FoL Target"] = "非战斗圣光闪现 目标",
 ["Will to"] = "生存意志",
+["Auto Summon Steward"] = "自动召唤执事者",
 
 --圣骑士：神圣
 ["Aggressive Glimmer"] = "Aggressive Glimmer", --createText
